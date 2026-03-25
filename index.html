@@ -8,16 +8,18 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-   
+<body class="homepage">
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
     <header class="header-above">
        <div class="slide-in-right">
         <ul class="nav-list">
-            <li><a href="javascript:void(0)">
-                <i class="fas fa-search"></i>
+            <li><a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>booking@japanresourcegroup.com</span>
             </a></li>
-     
-        <li class="language-select">
+            <li><a href="#" class="search-toggle"><i class="fas fa-search"></i></a></li>
+            <li class="language-select">
             <select id="language-select" onchange="changeLanguage(this.value)">
                 <option value="en">English</option>
                 <option value="ja">日本語</option>
@@ -53,11 +55,12 @@
                             <li><a href="custom_clearance.html">Custom Clearance</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                    
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-               <i class="fas fa-globe"></i> <a href="contact.html" class="">Global Network</a>
+               <a href="contact.html" class="header-cta-btn"><i class="fas fa-globe"></i><span>Global Network</span></a>
             </div>
             <div class="mobile-menu-toggle">
                 <span></span>
@@ -81,6 +84,7 @@
                         <li><a href="custom_clearance.html" class="mobile-nav-link">Custom Clearance</a></li>
                     </ul>
                 </li>
+                
                 <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
             </ul>
         </nav>
@@ -90,282 +94,221 @@
 
     
 
-    <!-- Sliders Section -->
-    <section id="about" class="sliders-section">
-        <div class="slider-container">
-            <div class="slider-wrapper">
-                <!-- Slide 1 -->
-                <div class="slide active" data-slide="1">
-                    <div class="slide-bg" style="background-image: url('images/slider1.jpg')"></div>
-                    <!-- <div class="slide-content">
-                        <h2 data-translate="slider1-title">JAPAN LOGISTICS</h2>
-                        <p data-translate="slider1-desc">Connecting the world through reliable and efficient logistics solutions</p>
-                    </div> -->
+    <!-- Hero Section -->
+    <section id="home" class="home-hero">
+        <div class="home-hero-panel">
+            <p class="home-hero-eyebrow">INTERNATIONAL LOGISTICS</p>
+            <h1 data-translate="hero-title">Coordinated Global Logistics</h1>
+            <p class="home-hero-copy">Reliable ocean and land transport solutions.</p>
+            <div class="home-hero-actions">
+                <a href="#services" class="home-primary-btn">All Services</a>
+                <div class="home-callout">
+                    <span class="home-callout-icon"><i class="fas fa-phone-alt"></i></span>
+                    <div>
+                        <span class="home-callout-label">Call Us Now</span>
+                        <a href="tel:+81757546036" class="home-callout-link">+81 75-754-6036</a>
+                    </div>
                 </div>
-
-                <!-- Slide 2 -->
-                <div class="slide" data-slide="2">
-                    <div class="slide-bg" style="background-image: url('images/slider2.jpg')"></div>
-                    <!-- <div class="slide-content">
-                        <h2 data-translate="slider2-title">Our Vision</h2>
-                        <p data-translate="slider2-desc">To be the leading logistics provider, delivering excellence in every shipment and building lasting partnerships with our clients worldwide.</p>
-                    </div> -->
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="slide" data-slide="3">
-                    <div class="slide-bg" style="background-image: url('images/slider3.jpg')"></div>
-                    <!-- <div class="slide-content">
-                        <h2 data-translate="slider3-title">Our Expertise</h2>
-                        <ul>
-                            <li data-translate="slider3-list1">Global shipping network with major carriers</li>
-                            <li data-translate="slider3-list2">Advanced cargo security and tracking</li>
-                            <li data-translate="slider3-list3">Customs clearance and documentation</li>
-                        </ul>
-                    </div> -->
-                </div>
-
-                <!-- Slide 4 -->
-                <div class="slide" data-slide="4">
-                    <div class="slide-bg" style="background-image: url('images/slider4.jpg')"></div>
-                    <!-- <div class="slide-content">
-                        <h2 data-translate="slider4-title">THANK YOU</h2>
-                        <p data-translate="slider4-desc">For choosing us as your trusted logistics partner</p>
-                    </div> -->
-                </div>
-            </div>
-
-            <!-- Slider Navigation -->
-            <div class="slider-nav">
-                <button class="nav-btn prev-btn" onclick="changeSlide(-1)">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="nav-btn next-btn" onclick="changeSlide(1)">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-
-            <!-- Slider Dots -->
-            <div class="slider-dots">
-                <span class="dot active" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
-    </section>
-
-    <!-- Hero Banner -->
-    <section id="home" class="hero-banner bounce-in-up">
-        <div class="banner-content text-reveal">
-            <div class="banner-logo bounce-scale">
-                <div class="logo-icon large">Japan Resource Group</div>
-            </div>
-            <h1 class="bounce-elastic stagger-1" data-translate="hero-title">WE CARRY OUT YOUR LOGISTICS NEEDS ACROSS THE WORLD WHETHER ITS OCEAN OR LAND WITH OUR COMPREHENSIVE SERVICES</h1>
-        </div>
+        <div class="home-hero-visual" aria-hidden="true"></div>
     </section>
 
     <!-- Main Layout -->
     <div class="main-layout">
         <!-- Main Content Area -->
         <main class="content">
-            <!-- Departments Section -->
-            <section id="departments" class="departments-section bounce-in-up">
-               
-                <div class="departments-container">
-                    <!-- Marketing Department -->
-                    <div class="department-column bounce-in-left stagger-1">
-                        <div class="department-header">
-                            <div class="department-icon">
-                                <i class="fas fa-bullhorn"></i>
-                            </div>
-                            <h3 data-translate="marketing-dept">Marketing Department</h3>
-                        </div>
-                        <div class="personnel-list">
-                            <div class="personnel-item text-reveal stagger-2">
-                                <div class="personnel-name" data-translate="marketing-desc">Led by Junaid Khan, the Marketing
-                                    Department focuses on promoting
-                                    Japan Resource Group's services,
-                                    building strong client relationships,
-                                    and creating brand awareness. The
-                                    team ensures effective
-                                    communication, manages
-                                    campaigns, and highlights the
-                                    company's strengths in the logistics
-                                    industry.
-                                    </div>
-                               
-                            </div>
-                            
-                           
-                        </div>
+            <!-- Operations Section -->
+            <section id="departments" class="operations-showcase section-reveal">
+                <div class="operations-media fade-in-up">
+                    <div class="operations-image operations-image-large">
+                        <img src="images/about/mission1.jpg" alt="Warehouse planning">
                     </div>
-
-                    <!-- Transport Department -->
-                    <div class="department-column bounce-in-right stagger-2">
-                        <div class="department-header">
-                            <div class="department-icon">
-                                <i class="fas fa-truck"></i>
-                            </div>
+                    <div class="operations-image operations-image-small">
+                        <img src="images/about/mission2.jpg" alt="Logistics handling">
+                    </div>
+                </div>
+                <div class="operations-content fade-in-up stagger-1">
+                    <p class="section-eyebrow">WE SPECIALISE IN THE TRANSPORTATION</p>
+                    <h2>Manage your logistics with a coordinated operations team</h2>
+                    <p class="operations-summary">Japan Resource Group coordinates transport and booking operations to keep cargo movement clear, efficient, and professionally managed from planning to delivery.</p>
+                    <div class="operations-grid">
+                        <article class="operations-point">
                             <h3 data-translate="transport-dept">Transport Department</h3>
-                        </div>
-                        <div class="personnel-list">
-                            <div class="personnel-item text-reveal stagger-3">
-                                <div class="personnel-name" data-translate="transport-desc">Headed by Shiraz, the Transport
-                                    Department manages land and
-                                    ocean transportation. It ensures
-                                    smooth cargo movement, timely
-                                    deliveries, and compliance with
-                                    safety and regulatory standards
-                                    while coordinating with other
-                                    departments for efficiency.
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Booking Department -->
-                    <div class="department-column bounce-scale stagger-3">
-                        <div class="department-header">
-                            <div class="department-icon">
-                                <i class="fas fa-ship"></i>
-                            </div>
+                            <p data-translate="transport-desc">Manages land and ocean transportation, ensuring smooth cargo movement and timely deliveries across global routes.</p>
+                        </article>
+                        <article class="operations-point">
                             <h3 data-translate="booking-dept">Booking Department</h3>
-                        </div>
-                        <div class="personnel-list">
-                            <div class="personnel-item text-reveal stagger-4">
-                                <div class="personnel-name" data-translate="booking-desc">Also overseen by Shiraz, the
-                                    Booking Department handles cargo
-                                    reservations and shipment
-                                    scheduling. The team ensures
-                                    accurate documentation, timely
-                                    bookings, and seamless
-                                    coordination with carriers and
-                                    clients.
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Operation Department -->
-                    <div class="department-column card-reveal stagger-4">
-                        <div class="department-header">
-                            <div class="department-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <h3 data-translate="operation-dept">Operation Department</h3>
-                        </div>
-                        <div class="personnel-list">
-                            <div class="personnel-item text-reveal stagger-5">
-                                <div class="personnel-name" data-translate="operation-desc">Managed by Junaid Khan, the
-                                    Operation Department is responsible
-                                    for day-to-day logistics execution. From
-                                    handling shipments to coordinating
-                                    with transport and yard services, this
-                                    department ensures that all operations
-                                    run smoothly and efficiently.</div>
-                            </div>
-                        </div>
+                            <p data-translate="booking-desc">Handles cargo reservations, shipment scheduling, and documentation with precision and reliability.</p>
+                        </article>
                     </div>
                 </div>
             </section>
 
             <!-- Services Section -->
-            <section id="services" class="services-section section-reveal">
-                <h2 class="fade-in-up" data-translate="our-services">OUR SERVICES</h2>
-                <div class="services-grid">
-                    <div class="service-card card-reveal stagger-1">
-                        <div class="service-icon">
-                            <i class="fas fa-landmark"></i>
+            <section id="services" class="services-showcase section-reveal">
+                <div class="section-heading fade-in-up">
+                    <p class="section-eyebrow">SHIPPING SERVICES</p>
+                    <h2 data-translate="our-services">Specialist Logistics Services</h2>
+                </div>
+                <div class="services-grid home-services-grid">
+                    <article class="service-feature-card card-reveal stagger-1">
+                        <div class="service-feature-image">
+                            <img src="images/land/banner.jpg" alt="Land transportation">
                         </div>
-                        <h3><a href="land_transportation.html">LAND TRANSPORTAION</a></h3>
-                    </div>
-                    <div class="service-card card-reveal stagger-2">
-                        <div class="service-icon">
+                        <div class="service-feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="service-feature-content">
+                            <h3><a href="land_transportation.html">Land Transportation</a></h3>
+                            <p>Reliable inland transport solutions with controlled handling and timely delivery across your cargo route.</p>
+                            <a href="land_transportation.html" class="service-read-more">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="service-feature-card card-reveal stagger-2">
+                        <div class="service-feature-image">
+                            <img src="images/ocean/banner.jpg" alt="Ocean transportation">
+                        </div>
+                        <div class="service-feature-icon">
                             <i class="fas fa-ship"></i>
                         </div>
-                        <h3><a href="ocean_transportation.html">OCEAN TRANPORTATION</a></h3>
-                    </div>
-                    <div class="service-card card-reveal stagger-3">
-                        <div class="service-icon">
+                        <div class="service-feature-content">
+                            <h3><a href="ocean_transportation.html">Ocean Transportation</a></h3>
+                            <p>Professional ocean freight coordination for secure, efficient international shipping and carrier planning.</p>
+                            <a href="ocean_transportation.html" class="service-read-more">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="service-feature-card card-reveal stagger-3">
+                        <div class="service-feature-image">
+                            <img src="images/supply/banner.webp" alt="Supply chain management">
+                        </div>
+                        <div class="service-feature-icon">
                             <i class="fas fa-shipping-fast"></i>
                         </div>
-                        <h3><a href="supply_chain_management.html">SUPPLY CHAIN MANAGEMENT</a></h3>
-                    </div>
-                   
+                        <div class="service-feature-content">
+                            <h3><a href="supply_chain_management.html">Supply Chain Management</a></h3>
+                            <p>End-to-end shipment planning that keeps your cargo moving with clarity, visibility, and control.</p>
+                            <a href="supply_chain_management.html" class="service-read-more">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="service-feature-card card-reveal stagger-4">
+                        <div class="service-feature-image">
+                            <img src="images/yard/cover.jpg" alt="Yard services">
+                        </div>
+                        <div class="service-feature-icon">
+                            <i class="fas fa-warehouse"></i>
+                        </div>
+                        <div class="service-feature-content">
+                            <h3><a href="yard_services.html">Yard Services</a></h3>
+                            <p>Organized yard handling support that improves preparation, storage flow, and operational turnaround.</p>
+                            <a href="yard_services.html" class="service-read-more">Read More</a>
+                        </div>
+                    </article>
+
+                    <article class="service-feature-card card-reveal stagger-5">
+                        <div class="service-feature-image">
+                            <img src="images/custom/cover2.jpg" alt="Custom clearance">
+                        </div>
+                        <div class="service-feature-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="service-feature-content">
+                            <h3><a href="custom_clearance.html">Custom Clearance</a></h3>
+                            <p>Accurate documentation and customs support designed to keep cargo compliant and moving without delay.</p>
+                            <a href="custom_clearance.html" class="service-read-more">Read More</a>
+                        </div>
+                    </article>
                 </div>
             </section>
 
-              <!-- Shipping Line Providers Section -->
-            <section id="partners" class="shipping-providers-section section-reveal">
-                <h2 class="fade-in-up" data-translate="shipping-providers">SHIPPING LINE PROVIDERS</h2>
-                <p class="text-reveal stagger-1" data-translate="partnership-desc">Our trusted partnerships with world-leading shipping lines allow us to deliver excellence in global logistics. With these alliances, we ensure smooth, secure, and efficient cargo movement across international waters.</p>
-                
-                <div class="partnership-benefits fade-in-up stagger-2">
-                    <h3 data-translate="partnership-benefits">Through our shipping line providers, we offer:</h3>
-                    <ul class="benefits-list">
-                        <li class="fade-in-left stagger-1" data-translate="benefit1"><strong>Global Reach</strong> – Seamless connectivity to major ports worldwide.</li>
-                        <li class="fade-in-left stagger-2" data-translate="benefit2"><strong>Efficiency & Speed</strong> – Optimized transit times with assured reliability.</li>
-                        <li class="fade-in-left stagger-3" data-translate="benefit3"><strong>Cargo Safety</strong> – Advanced handling and secure transportation.</li>
-                        <li class="fade-in-left stagger-4" data-translate="benefit4"><strong>Flexible Options</strong> – Wide carrier choices to suit diverse business needs.</li>
-                        <li class="fade-in-left stagger-5" data-translate="benefit5"><strong>Cost-Effectiveness</strong> – Competitive pricing without compromising quality.</li>
-                    </ul>
+            <!-- Competence Section -->
+            <section class="competence-section section-reveal">
+                <div class="competence-media fade-in-up">
+                    <img src="images/about/mission3.jpg" alt="Warehouse operations">
                 </div>
-                
-                <div class="shipping-logos-grid">
-                    <div class="shipping-logo">
-                        <a href="https://www.maersk.com" target="_blank"><div class="logo-container">
-                            <div class="logo-symbol maersk-symbol">
-                                <img src="https://logos-world.net/wp-content/uploads/2022/09/Maersk-Logo.png" alt="Maersk" class="logo-image">
-                            </div>
-                            <span class="logo-text">MAERSK</span>
+                <div class="competence-content fade-in-up stagger-1">
+                    <p class="section-eyebrow">GLOBAL SHIPPING SUPPORT</p>
+                    <h2>Our industry-focused logistics competence</h2>
+                    <p data-translate="partnership-desc">Our trusted partnerships with world-leading shipping lines allow us to deliver excellence in global logistics. With these alliances, we ensure smooth, secure, and efficient cargo movement across international waters.</p>
+                    <div class="competence-panel">
+                        <ul class="competence-list">
+                            <li data-translate="benefit1"><strong>Global Reach</strong> – Seamless connectivity to major ports worldwide.</li>
+                            <li data-translate="benefit2"><strong>Efficiency & Speed</strong> – Optimized transit times with assured reliability.</li>
+                            <li data-translate="benefit3"><strong>Cargo Safety</strong> – Advanced handling and secure transportation.</li>
+                            <li data-translate="benefit4"><strong>Flexible Options</strong> – Wide carrier choices to suit diverse business needs.</li>
+                            <li data-translate="benefit5"><strong>Cost-Effectiveness</strong> – Competitive pricing without compromising quality.</li>
+                            <li>Land and ocean transport support coordinated by dedicated internal departments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-band section-reveal">
+                <div class="stats-grid">
+                    <article class="stat-card fade-in-up stagger-1">
+                        <span class="stat-icon"><i class="fas fa-box-open"></i></span>
+                        <div>
+                            <strong>5</strong>
+                            <p>Core Services</p>
                         </div>
-                    </div></a>
-                    
-                    <div class="shipping-logo">
-                       <a href="https://www.hapag-lloyd.com" target="_blank"><div class="logo-container">
-                            <div class="logo-symbol hapag-symbol">
-                                <img src="https://cdn.freebiesupply.com/logos/large/2x/hapag-lloyd-2-logo-png-transparent.png" alt="Hapag-Lloyd" class="logo-image">
-                            </div>
-                            <span class="logo-text">HAPAG-LLOYD</span>
+                    </article>
+                    <article class="stat-card fade-in-up stagger-2">
+                        <span class="stat-icon"><i class="fas fa-users-cog"></i></span>
+                        <div>
+                            <strong>2</strong>
+                            <p>Operational Departments</p>
                         </div>
-                    </div></a>
-                    
-                    <div class="shipping-logo">
-                     <a href="https://www.oocl.com" target="_blank"><div class="logo-container">
-                            <div class="logo-symbol oocl-symbol">
-                                <img src="https://www.oocl.com/Style%20Library/revamp/Images/OOCL_logo.svg" alt="OOCL" class="logo-image">
-                            </div>
-                            <span class="logo-text">OOCL</span>
+                    </article>
+                    <article class="stat-card fade-in-up stagger-3">
+                        <span class="stat-icon"><i class="fas fa-anchor"></i></span>
+                        <div>
+                            <strong>6</strong>
+                            <p>Shipping Line Providers</p>
                         </div>
-                    </div></a>
-                    
-                    <div class="shipping-logo">
-                        <a href="https://www.msc.com" target="_blank"><div class="logo-container">
-                            <div class="logo-symbol msc-symbol msc-icon-msc">
-                                <img src="images/partners/msc.png" alt="MSC" class="logo-image">
-                            </div>
-                            <span class="logo-text">MSC</span>
+                    </article>
+                    <article class="stat-card fade-in-up stagger-4">
+                        <span class="stat-icon"><i class="fas fa-globe-asia"></i></span>
+                        <div>
+                            <strong>2</strong>
+                            <p>Transport Modes Managed</p>
                         </div>
-                    </div></a>
-                    
-                    <div class="shipping-logo">
-                        <a href="https://www.cma-cgm.com" target="_blank"><div class="logo-container">
-                            <div class="logo-symbol cma-symbol">
-                                <img src="https://www.cma-cgm.com/Images-pxp/v3-1/logo/CMACGM-h57.svg" alt="CMA CGM" class="logo-image">
-                            </div>
-                            <span class="logo-text">CMA CGM</span>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Shipping Line Providers Section -->
+            <section id="partners" class="shipping-providers-section section-reveal">
+                <div class="section-heading fade-in-up">
+                    <p class="section-eyebrow" data-translate="shipping-providers">SHIPPING LINE PROVIDERS</p>
+                    <h2>Trusted global shipping partners</h2>
+                    <p>Our shipping network supports reliable cargo movement, stronger route flexibility, and dependable international coordination.</p>
+                </div>
+
+                <div class="partners-static-container fade-in-up">
+                    <div class="partners-static-grid">
+                        <div class="shipping-logo">
+                            <img src="https://logos-world.net/wp-content/uploads/2022/09/Maersk-Logo.png" alt="Maersk" class="logo-image">
                         </div>
-                    </div></a>
-                    
-                    <div class="shipping-logo">
-                        <a href="https://www.sitc.com" target="_blank"><div class="logo-container">
-                            <div class="logo-symbol sitc-symbol">
-                                <img src="https://www.sitc.com/en/logo.jpg" alt="SITC" class="logo-image">
-                            </div>
-                            <span class="logo-text">SITC</span>
+                        <div class="shipping-logo">
+                            <img src="https://cdn.freebiesupply.com/logos/large/2x/hapag-lloyd-2-logo-png-transparent.png" alt="Hapag-Lloyd" class="logo-image">
                         </div>
-                    </div></a>
+                        <div class="shipping-logo">
+                            <img src="https://www.oocl.com/Style%20Library/revamp/Images/OOCL_logo.svg" alt="OOCL" class="logo-image">
+                        </div>
+                        <div class="shipping-logo">
+                            <img src="images/partners/msc.png" alt="MSC" class="logo-image">
+                        </div>
+                        <div class="shipping-logo">
+                            <img src="images/partners/CMACGM.svg" alt="CMA CGM" class="logo-image">
+                        </div>
+                        <div class="shipping-logo">
+                            <img src="images/partners/sitc.png" alt="SITC" class="logo-image">
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -376,8 +319,10 @@
     <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="footer-content">
-            <div class="footer-section">
+            <div class="footer-section footer-brand">
                <img src="images/logo.png" alt="logo" width="250" height="100"/>
+               <p>Japan Resource Group provides dependable logistics coordination across land and ocean transport, booking, customs support, and operational handling.</p>
+               <a href="contact.html" class="footer-cta">Get In Touch</a>
             </div>
             <div class="footer-section">
                 <h4 data-translate="contact-japan">CONTACT JAPAN RESOURCE GROUP</h4>
@@ -420,8 +365,10 @@
             <div class="footer-section">
                 <h4 data-translate="explore-japan">EXPLORE JAPAN RESOURCE GROUP</h4>
                 <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
                     <li><a href="about.html" data-translate="company-profile">Company Profile</a></li>
                     <li><a href="about.html" data-translate="about-japan">About Japan Resource Group</a></li>
+                    <li><a href="contact.html" data-translate="get-in-touch">Get In Touch</a></li>
                 </ul>
             </div>
         </div>
@@ -430,6 +377,9 @@
             <div class="social-links">
                 <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                 <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
@@ -439,120 +389,9 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <script src="slider.js"></script>
     <script src="script.js"></script>
     <script src="language-system.js"></script>
     <script src="search.js"></script>
     <script src="scroll-to-top.js"></script>
-    
-    <!-- Service Navigation Script -->
-    <script>
-        // Function to navigate to service
-        function navigateToService(value) {
-            if (value) {
-                window.location.href = value;
-            }
-        }
-    </script>
-    
-    <!-- Mobile Menu Override Script -->
-    <script>
-        // Override mobile menu functionality to ensure it works
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait for other scripts to load
-            setTimeout(function() {
-                const mobileToggle = document.querySelector('.mobile-menu-toggle');
-                const mobileNav = document.querySelector('.mobile-nav');
-                const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
-                
-                if (mobileToggle && mobileNav) {
-                    // Remove any existing event listeners by cloning the element
-                    const newToggle = mobileToggle.cloneNode(true);
-                    mobileToggle.parentNode.replaceChild(newToggle, mobileToggle);
-                    
-                    // Add new event listener
-                    newToggle.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        newToggle.classList.toggle('active');
-                        mobileNav.classList.toggle('active');
-                        
-                        // Animate hamburger menu
-                        const spans = newToggle.querySelectorAll('span');
-                        if (newToggle.classList.contains('active')) {
-                            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                            spans[1].style.opacity = '0';
-                            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                        } else {
-                            spans[0].style.transform = 'none';
-                            spans[1].style.opacity = '1';
-                            spans[2].style.transform = 'none';
-                        }
-                    });
-                    
-                    // Handle mobile dropdown toggles
-                    mobileDropdownToggles.forEach(toggle => {
-                        toggle.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            const dropdown = toggle.closest('.mobile-dropdown');
-                            dropdown.classList.toggle('active');
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on dropdown menu items
-                    const mobileDropdownItems = document.querySelectorAll('.mobile-dropdown-menu .mobile-nav-link');
-                    mobileDropdownItems.forEach(item => {
-                        item.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on a link (but not dropdown toggles)
-                    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link:not(.mobile-dropdown-toggle)');
-                    mobileNavLinks.forEach(link => {
-                        link.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking outside
-                    document.addEventListener('click', (e) => {
-                        if (mobileNav && newToggle && mobileNav.classList.contains('active')) {
-                            if (!mobileNav.contains(e.target) && !newToggle.contains(e.target)) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        }
-                    });
-                }
-            }, 1000);
-        });
-    </script>
 </body>
 </html>

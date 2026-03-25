@@ -8,46 +8,45 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="homepage">
     <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
     <header class="header-above">
-        <div class="slide-in-right">
-         <ul class="nav-list">
-             <li><a href="javascript:void(0)">
-                 <i class="fas fa-search"></i>
-             </a></li>
+       <div class="slide-in-right">
+        <ul class="nav-list">
+            <li><a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>booking@japanresourcegroup.com</span>
+            </a></li>
+            <li><a href="#" class="search-toggle"><i class="fas fa-search"></i></a></li>
+            <li class="language-select">
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+                <option value="ko">한국어</option>
+            </select>
+        </li>
+        <li><a href="contact.html">
+            <i class="fas fa-phone-alt"></i>
+            <span data-translate="get-in-touch">Get In Touch</span>
+        </a></li>
       
-         <li class="language-select">
-             <select id="language-select" onchange="changeLanguage(this.value)">
-                 <option value="en">English</option>
-                 <option value="ja">日本語</option>
-                 <option value="zh">中文</option>
-                 <option value="ko">한국어</option>
-             </select>
-         </li>
-         <li><a href="contact.html">
-             <i class="fas fa-phone-alt"></i>
-             <span data-translate="get-in-touch">Get In Touch</span>
-         </a></li>
-       
-         </ul>
-        </div>
-     </header>
-    
+        </ul>
+       </div>
+    </header>
     <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="logo">
-                </a>
+                <img src="images/logo.png" alt="logo">
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" data-translate="about-us">About Us</a></li>
                     <li class="dropdown">
-                        <a href="#services" class="dropdown-toggle active">Services <i class="fas fa-chevron-down"></i></a>
+                        <a href="#services" class="dropdown-toggle active" data-translate="services">Services <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="ocean_transportation.html">Ocean Transportation</a></li>
                             <li><a href="supply_chain_management.html" class="active">Supply Chain Management</a></li>
@@ -56,12 +55,13 @@
                             <li><a href="custom_clearance.html">Custom Clearance</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                    
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <i class="fas fa-globe"></i> <a href="contact.html" class="">Global Network</a>
-             </div>
+               <a href="contact.html" class="header-cta-btn"><i class="fas fa-globe"></i><span>Global Network</span></a>
+            </div>
             <div class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -74,105 +74,111 @@
             <ul class="mobile-nav-list">
                 <li><a href="index.html" class="mobile-nav-link">Home</a></li>
                 <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
-                <li class="mobile-dropdown">
+                <li class="mobile-dropdown active">
                     <a href="#services" class="mobile-nav-link mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
                     <ul class="mobile-dropdown-menu">
                         <li><a href="ocean_transportation.html" class="mobile-nav-link">Ocean Transportation</a></li>
-                        <li><a href="supply_chain_management.html" class="mobile-nav-link">Supply Chain Management</a></li>
+                        <li><a href="supply_chain_management.html" class="mobile-nav-link active">Supply Chain Management</a></li>
                         <li><a href="land_transportation.html" class="mobile-nav-link">Land Transportation</a></li>
                         <li><a href="yard_services.html" class="mobile-nav-link">Yard Services</a></li>
                         <li><a href="custom_clearance.html" class="mobile-nav-link">Custom Clearance</a></li>
                     </ul>
                 </li>
+                
                 <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Banner -->
-    <section class="supply-chain-banner bounce-in-up">
-        <div class="banner-overlay">
-            <h1 class="text-reveal bounce-elastic" data-translate="supply-title">SUPPLY CHAIN MANAGEMENT</h1>
-        </div>
+    <section class="supply-chain-banner">
+    
     </section>
 
     <!-- Ocean Transportation Content -->
     <div class="ocean-container">
         <div class="ocean-main-content">
-            <!-- Introduction Section -->
-            <!-- <div class="intro-section fade-in-up">
-                <div class="intro-banner">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Supply Chain Management">
-                    <div class="intro-content">
-                        <h2 class="fade-in-up">Japan Resource Group | Supply Chain Management</h2>
-                        <p class="fade-in-delay-1">Optimizing Your Supply Chain. At Japan Resource Group, we understand that a strong supply chain is the backbone of any successful business. Our supply chain management solutions are designed to streamline every step — from procurement and warehousing to transportation and final delivery. By combining advanced technology, industry expertise, and a dedicated team, we create end-to-end solutions that save costs, improve efficiency, and give businesses a competitive edge.</p>
-                        <h3 class="fade-in-delay-2">WHY CHOOSE US!</h3>
+            <!-- Modern Intro Split Section -->
+            <section class="modern-section">
+                <div class="why-us-split bounce-in-up">
+                    <div class="why-us-image">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Supply Chain Management">
+                    </div>
+                    <div class="why-us-content">
+                        <h2 class="bounce-in-left" data-translate="supply-intro-title">OPTIMIZING YOUR SUPPLY CHAIN</h2>
+                        <h3 class="bounce-in-up stagger-1" style="color: var(--primary-red); margin-bottom: 1.5rem;">End-to-End Logistics Excellence</h3>
+                        <p class="bounce-in-up stagger-2" data-translate="supply-intro">At Japan Resource Group, we understand that a strong supply chain is the backbone of any successful business. Our supply chain management solutions are designed to streamline every step — from procurement and warehousing to transportation and final delivery. By combining advanced technology, industry expertise, and a dedicated team, we create end-to-end solutions that save costs and improve efficiency.</p>
+                        <a href="contact.html" class="download-btn bounce-in-up stagger-3" style="text-decoration: none;"><i class="fas fa-project-diagram"></i> Optimize Now</a>
                     </div>
                 </div>
-            </div> -->
+            </section>
 
-            <!-- Main Content Grid -->
-            <div class="ocean-content-grid">
-                <!-- Left Column - Text Content -->
-                <div class="ocean-text-content bounce-in-left">
-                    
-                    
-                    <div class="content-section bounce-in-up stagger-1">
-                        <h3 class="bounce-scale" data-translate="supply-optimizing-title">Optimizing Your Supply Chain</h3>
-                        <p class="bounce-elastic stagger-2" data-translate="supply-optimizing-desc">At Japan Resource Group, we understand that a strong supply chain is the backbone of any successful business. Our supply chain management solutions are designed to streamline every step — from procurement and warehousing to transportation and final delivery. By combining advanced technology, industry expertise, and a dedicated team, we create end-to-end solutions that save costs, improve efficiency, and give businesses a competitive edge.</p>
+            <!-- Modern Capabilities Grid -->
+            <section class="modern-section">
+                <h2 class="section-title-center" data-translate="core-capabilities">Our Core Capabilities</h2>
+                <div class="values-grid">
+                    <div class="value-card bounce-in-up stagger-1">
+                        <i class="fas fa-eye"></i>
+                        <h4 data-translate="end-to-end-visibility-title">Total Visibility</h4>
+                        <p data-translate="end-to-end-visibility-desc">Real-time tracking and comprehensive reporting across all stages of your supply chain for better decision-making.</p>
                     </div>
-
-                    <div class="content-section bounce-in-up stagger-2">
-                        <h3 class="bounce-scale" data-translate="supply-visibility-title">End-to-End Visibility</h3>
-                        <p class="bounce-elastic stagger-3" data-translate="supply-visibility-desc">We provide complete transparency across the entire supply chain. From sourcing raw materials to delivering finished goods, every stage is tracked and monitored in real-time. This visibility allows our clients to make informed decisions, reduce risks, and avoid unexpected delays. With Japan Resource Group, businesses gain a clear view of their operations at all times.</p>
+                    <div class="value-card bounce-in-up stagger-2">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h4 data-translate="cost-efficiency-title">Cost Optimization</h4>
+                        <p data-translate="cost-efficiency-desc">Identifying bottlenecks and implementing lean strategies to reduce operational overhead and maximize value.</p>
                     </div>
-
-                    <div class="content-section fade-in-up">
-                        <h3 class="fade-in-up" data-translate="supply-warehousing-title">Warehousing & Inventory Management</h3>
-                        <p class="fade-in-delay-1" data-translate="supply-warehousing-desc">Our strategically located warehouses are equipped to store and manage goods securely. We provide smart inventory management systems that help businesses maintain accurate stock levels, reduce wastage, and improve order fulfillment speed. Whether it's short-term storage or long-term distribution planning, Japan Resource Group offers scalable solutions tailored to your needs.</p>
+                    <div class="value-card bounce-in-up stagger-3">
+                        <i class="fas fa-handshake"></i>
+                        <h4 data-translate="strategic-procurement-title">Strategic Sourcing</h4>
+                        <p data-translate="strategic-procurement-desc">Expert procurement management and supplier coordination to ensure reliable flow of goods and materials.</p>
                     </div>
-
-                    <div class="content-section fade-in-up">
-                        <h3 class="fade-in-up" data-translate="supply-integrated-title">Integrated Logistics Solutions</h3>
-                        <p class="fade-in-delay-1" data-translate="supply-integrated-desc">We bring together land, ocean, and yard services under one umbrella, ensuring seamless coordination between transportation modes. By integrating these services, we reduce transit times, cut down costs, and provide clients with a smooth, uninterrupted supply chain experience.</p>
-                    </div>
-
-                    <div class="content-section fade-in-up">
-                        <h3 class="fade-in-up" data-translate="supply-customized-title">Customized Solutions for Every Industry</h3>
-                        <p class="fade-in-delay-1" data-translate="supply-customized-desc">Every industry has unique logistics needs, and our experts are skilled in designing solutions for retail, manufacturing, automotive, healthcare, and more. From just-in-time deliveries to large-scale distribution, we adapt our supply chain strategies to match your business goals.</p>
-                    </div>
-
-                    <div class="content-section fade-in-up">
-                        <h3 class="fade-in-up" data-translate="supply-technology-title">Technology-Driven Planning</h3>
-                        <p class="fade-in-delay-1" data-translate="supply-technology-desc">Using data analytics and digital tools, we optimize routes, manage resources, and forecast demand accurately. This proactive approach helps businesses stay ahead of challenges, reduce operational costs, and maximize customer satisfaction.</p>
+                    <div class="value-card bounce-in-up stagger-4">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                        <h4 data-translate="scalable-solutions-title">Scalable Growth</h4>
+                        <p data-translate="scalable-solutions-desc">Flexible logistics frameworks that grow with your business, adapting to changing market demands seamlessly.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Why Choose Us Section - Below Main Content -->
-            <div class="why-ocean-freight-container fade-in-up">
-                <div class="why-ocean-freight-content">
-                    <div class="why-ocean-freight-text slide-in-left">
-                        <h2 class="fade-in-up" data-translate="supply-why-title">Why Choose Japan Resource Group for Supply Chain Management?</h2>
-                        
-                        <div class="why-choose-list fade-in-delay-1">
-                            <ul class="fade-in-delay-2">
-                                <li class="fade-in-delay-3" data-translate="supply-why-1">End-to-end visibility and control over operations</li>
-                                <li class="fade-in-delay-4" data-translate="supply-why-2">Secure warehousing and smart inventory management</li>
-                                <li class="fade-in-delay-5" data-translate="supply-why-3">Seamless integration of land, ocean, and yard services</li>
-                                <li class="fade-in-delay-6" data-translate="supply-why-4">Customized solutions for diverse industries</li>
-                                <li class="fade-in-delay-7" data-translate="supply-why-5">Data-driven planning and demand forecasting</li>
-                                <li class="fade-in-delay-8" data-translate="supply-why-6">Cost-effective strategies without compromising reliability</li>
-                            </ul>
+            <!-- Modern Benefits Split Layout -->
+            <section class="modern-section">
+                <div class="why-us-split bounce-in-up" style="grid-template-columns: 1.2fr 0.8fr;">
+                    <div class="why-us-content" style="padding: 4rem 3rem;">
+                        <h2 class="bounce-in-left" data-translate="why-supply-title">Why Choose Us?</h2>
+                        <div class="benefit-list">
+                            <div class="benefit-item bounce-in-right stagger-1">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-supply-1">Data-driven insights for smarter supply chain decisions</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-2">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-supply-2">Reduction in lead times through optimized workflows</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-3">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-supply-3">Seamless integration with global transport networks</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-4">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-supply-4">Scalable solutions for businesses of all sizes</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="why-ocean-freight-image slide-in-right">
-                        <img src="images/supply/more.png" alt="Supply Chain Management" class="bounce-in-delay-2">
+                    <div class="why-us-image">
+                        <img src="https://images.unsplash.com/photo-1566633806327-68e152aaf26d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Why Choose Supply Chain">
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
+    </div>
 
          <!-- Land Transportation Services Grid -->
        
@@ -181,8 +187,10 @@
     <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-               <img src="images/logo.png" alt="logo" width="250" height="100"/>
+            <div class="footer-section footer-brand">
+                <img src="images/logo.png" alt="logo" width="250" height="100"/>
+                <p>Japan Resource Group provides dependable logistics coordination across land and ocean transport, booking, customs support, and operational handling.</p>
+                <a href="contact.html" class="footer-cta">Get In Touch</a>
             </div>
             <div class="footer-section">
                 <h4 data-translate="contact-japan">CONTACT JAPAN RESOURCE GROUP</h4>
@@ -225,16 +233,15 @@
             <div class="footer-section">
                 <h4 data-translate="explore-japan">EXPLORE JAPAN RESOURCE GROUP</h4>
                 <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
                     <li><a href="about.html" data-translate="company-profile">Company Profile</a></li>
                     <li><a href="about.html" data-translate="about-japan">About Japan Resource Group</a></li>
+                    <li><a href="contact.html" data-translate="get-in-touch">Get In Touch</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <p><span data-translate="footer-copyright">&copy; 2025 Japan Resource Group.</span> <span data-translate="rights-reserved">All rights reserved.</span></p>
-            <div class="social-links">
-                <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
@@ -247,114 +254,6 @@
     <script src="script.js"></script>
     <script src="language-system.js"></script>
     <script src="search.js"></script>
-    
-    <!-- Mobile Menu Override Script -->
-    <script>
-        // Override mobile menu functionality to ensure it works
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait for other scripts to load
-            setTimeout(function() {
-                const mobileToggle = document.querySelector('.mobile-menu-toggle');
-                const mobileNav = document.querySelector('.mobile-nav');
-                const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
-                
-                if (mobileToggle && mobileNav) {
-                    // Remove any existing event listeners by cloning the element
-                    const newToggle = mobileToggle.cloneNode(true);
-                    mobileToggle.parentNode.replaceChild(newToggle, mobileToggle);
-                    
-                    // Add new event listener
-                    newToggle.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        newToggle.classList.toggle('active');
-                        mobileNav.classList.toggle('active');
-                        
-                        // Animate hamburger menu
-                        const spans = newToggle.querySelectorAll('span');
-                        if (newToggle.classList.contains('active')) {
-                            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                            spans[1].style.opacity = '0';
-                            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                        } else {
-                            spans[0].style.transform = 'none';
-                            spans[1].style.opacity = '1';
-                            spans[2].style.transform = 'none';
-                        }
-                    });
-                    
-                    // Handle mobile dropdown toggles
-                    mobileDropdownToggles.forEach(toggle => {
-                        toggle.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            const dropdown = toggle.closest('.mobile-dropdown');
-                            dropdown.classList.toggle('active');
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on dropdown menu items
-                    const mobileDropdownItems = document.querySelectorAll('.mobile-dropdown-menu .mobile-nav-link');
-                    mobileDropdownItems.forEach(item => {
-                        item.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on a link (but not dropdown toggles)
-                    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link:not(.mobile-dropdown-toggle)');
-                    mobileNavLinks.forEach(link => {
-                        link.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking outside
-                    document.addEventListener('click', (e) => {
-                        if (mobileNav && newToggle && mobileNav.classList.contains('active')) {
-                            if (!mobileNav.contains(e.target) && !newToggle.contains(e.target)) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        }
-                    });
-                }
-            }, 1000);
-        });
-    </script>
-    
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-    
-    <script src="script.js"></script>
-    <script src="language-system.js"></script>
     <script src="scroll-to-top.js"></script>
 </body>
 </html>

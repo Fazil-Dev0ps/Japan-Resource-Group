@@ -12,13 +12,13 @@ const translations = {
         'land_transportation': 'Land Transportation',
         'yard_services': 'Yard Services',
         'custom_clearance': 'Custom Clearance',
-        
+
         // Main Navigation
         'home': 'Home',
         'about-us': 'About Us',
         'services': 'Services',
         'contact': 'Contact',
-        
+
         // Common Page Elements
         'our-services': 'OUR SERVICES',
         'contact-japan': 'CONTACT JAPAN RESOURCE GROUP',
@@ -27,7 +27,7 @@ const translations = {
         'company-profile': 'Company Profile',
         'about-japan': 'About Japan Resource Group',
         'rights-reserved': 'All rights reserved.',
-        
+
         // About Page
         'about-title': 'ABOUT JAPAN RESOURCE GROUP',
         'about-subtitle': 'Your Trusted Partner in Global Logistics',
@@ -50,7 +50,7 @@ const translations = {
         'reason3-desc': 'State-of-the-art tracking and management systems',
         'reason4': '24/7 Support',
         'reason4-desc': 'Round-the-clock assistance for all your needs',
-        
+
         // Contact Page
         'contact-title': 'CONTACT US',
         'contact-subtitle': 'Get In Touch With Our Team',
@@ -73,7 +73,7 @@ const translations = {
         'office-hours-desc': 'Monday - Friday: 9:00 AM - 6:00 PM',
         'emergency-contact': 'Emergency Contact',
         'emergency-desc': '24/7 support for urgent shipments',
-        
+
         // Service Pages
         'ocean-title': 'OCEAN TRANSPORTATION',
         'ocean-subtitle': 'Reliable Sea Freight Solutions',
@@ -85,7 +85,7 @@ const translations = {
         'yard-subtitle': 'Comprehensive Yard Operations',
         'custom-title': 'CUSTOM CLEARANCE',
         'custom-subtitle': 'Expert Customs Solutions',
-        
+
         // Common Service Elements
         'service-overview': 'Service Overview',
         'key-features': 'Key Features',
@@ -95,10 +95,10 @@ const translations = {
         'learn-more': 'Learn More',
         'contact-us': 'Contact Us',
         'request-info': 'Request Information',
-        
+
         // Hero Section
-        'hero-title': 'WE CARRY OUT YOUR LOGISTICS NEEDS ACROSS THE WORLD WHETHER ITS OCEAN OR LAND WITH OUR COMPREHENSIVE SERVICES',
-        
+        'hero-title': 'We handle your global logistics needs across land and sea with complete, reliable services.',
+
         // Slider Content
         'slider1-title': 'JAPAN LOGISTICS',
         'slider1-desc': 'Connecting the world through reliable and efficient logistics solutions',
@@ -110,7 +110,7 @@ const translations = {
         'slider3-list3': 'Customs clearance and documentation',
         'slider4-title': 'THANK YOU',
         'slider4-desc': 'For choosing us as your trusted logistics partner',
-        
+
         // Departments
         'marketing-dept': 'Marketing Department',
         'transport-dept': 'Transport Department',
@@ -120,7 +120,7 @@ const translations = {
         'transport-desc': 'Headed by Shiraz, the Transport Department manages land and ocean transportation. It ensures smooth cargo movement, timely deliveries, and compliance with safety and regulatory standards while coordinating with other departments for efficiency.',
         'booking-desc': 'Also overseen by Shiraz, the Booking Department handles cargo reservations and shipment scheduling. The team ensures accurate documentation, timely bookings, and seamless coordination with carriers and clients.',
         'operation-desc': 'Managed by Junaid Khan, the Operation Department is responsible for day-to-day logistics execution. From handling shipments to coordinating with transport and yard services, this department ensures that all operations run smoothly and efficiently.',
-        
+
         // Shipping Partners
         'shipping-providers': 'SHIPPING LINE PROVIDERS',
         'partnership-desc': 'Our trusted partnerships with world-leading shipping lines allow us to deliver excellence in global logistics. With these alliances, we ensure smooth, secure, and efficient cargo movement across international waters.',
@@ -130,7 +130,7 @@ const translations = {
         'benefit3': 'Cargo Safety – Advanced handling and secure transportation.',
         'benefit4': 'Flexible Options – Wide carrier choices to suit diverse business needs.',
         'benefit5': 'Cost-Effectiveness – Competitive pricing without compromising quality.',
-        
+
         // Contact Page Specific
         'contact-title': 'CONTACT US',
         'contact-subtitle': 'Get In Touch With Our Team',
@@ -156,7 +156,7 @@ const translations = {
         'office-hours-desc': 'Monday - Friday: 9:00 AM - 6:00 PM (JST)',
         'emergency-contact': 'Emergency Contact',
         'emergency-desc': '24/7 support for urgent shipments',
-        
+
         // About Page Specific
         'about-title': 'ABOUT JAPAN RESOURCE GROUP',
         'about-subtitle': 'Your Trusted Partner in Global Logistics',
@@ -179,7 +179,7 @@ const translations = {
         'reason3-desc': 'State-of-the-art tracking and management systems',
         'reason4': '24/7 Support',
         'reason4-desc': 'Round-the-clock assistance for all your needs',
-        
+
         // Service Page Common Content
         'service-intro': 'Comprehensive logistics solutions tailored to your business needs',
         'service-desc': 'We provide end-to-end logistics services with a focus on efficiency, reliability, and customer satisfaction.',
@@ -194,7 +194,7 @@ const translations = {
         'request-quote': 'Request a Quote',
         'call-now': 'Call Now',
         'email-us': 'Email Us',
-        
+
         // Ocean Transportation Specific
         'ocean-intro': 'At Japan Resource Group, we specialize in reliable and efficient ocean transportation services that connect Japan to international markets. Whether it\'s full container loads (FCL), less-than-container loads (LCL), or specialized cargo, our team ensures smooth coordination from port to port. With strong partnerships across global shipping lines, we deliver cost-effective solutions without compromising on safety, compliance, or timeliness. Our commitment is to make sea freight simple, transparent, and dependable for every client.',
         'fcl-lcl-title': 'Full Container Load (FCL) & Less-than-Container Load (LCL)',
@@ -214,7 +214,7 @@ const translations = {
         'why-ocean-4': 'Complete documentation, customs, and compliance support',
         'why-ocean-5': 'Dedicated cargo safety, insurance, and risk management',
         'why-ocean-6': 'Technology-driven tracking and real-time visibility',
-        
+
         // Land Transportation Specific
         'land-intro': 'Japan Resource Group provides comprehensive land transportation solutions that ensure your cargo moves efficiently across Japan and beyond. Our land freight services cover everything from local deliveries to long-distance haulage, offering reliable and cost-effective solutions for businesses of all sizes. With a modern fleet and experienced drivers, we guarantee timely and secure transportation of your goods.',
         'local-delivery-title': 'Local & Regional Delivery',
@@ -249,7 +249,7 @@ const translations = {
         'integrated-solutions-subtitle': 'JAPAN RESOURCE GROUP ALSO PROVIDES COMPLETE SERVICES ON THE FOLLOWING DOMAINS.',
         'efficient-secure-title': 'Efficient & Secure Land Transport, Powered by Japan Resource Group',
         'efficient-secure-desc': 'Japan Resource Group ensures smooth and reliable land transportation solutions designed to meet diverse customer needs. From dedicated carrier vehicles to containerized transport, we guarantee safe handling, timely delivery, and cost-effective operations. With years of experience in the logistics industry, our specialized land transport services provide efficiency, flexibility, and complete peace of mind for our clients.',
-        
+
         // Supply Chain Management Specific
         'supply-intro': 'At Japan Resource Group, we understand that a strong supply chain is the backbone of any successful business. Our supply chain management solutions are designed to streamline every step — from procurement and warehousing to transportation and final delivery. By combining advanced technology, industry expertise, and a dedicated team, we create end-to-end solutions that save costs, improve efficiency, and give businesses a competitive edge.',
         'procurement-title': 'Strategic Procurement',
@@ -260,7 +260,7 @@ const translations = {
         'logistics-optimization-desc': 'We analyze and optimize your entire logistics network to reduce costs, improve efficiency, and enhance customer satisfaction. Our solutions include route optimization, inventory management, and demand forecasting.',
         'technology-integration-title': 'Technology Integration',
         'technology-integration-desc': 'We integrate cutting-edge technology into your supply chain operations, including real-time tracking, automated reporting, and predictive analytics. This ensures better visibility and control over your entire supply chain.',
-        
+
         // Yard Services Specific
         'yard-intro': 'Japan Resource Group offers comprehensive yard services that ensure efficient handling and storage of your cargo. Our state-of-the-art facilities and experienced team provide reliable solutions for container handling, cargo consolidation, and storage management.',
         'container-handling-title': 'Container Handling',
@@ -271,7 +271,7 @@ const translations = {
         'storage-management-desc': 'Our secure storage facilities provide temporary storage for your cargo with proper climate control and security measures. We offer both short-term and long-term storage solutions based on your needs.',
         'inspection-services-title': 'Inspection Services',
         'inspection-services-desc': 'We provide comprehensive inspection services for incoming and outgoing cargo, ensuring quality control and compliance with international standards. Our certified inspectors conduct thorough checks to prevent damage and ensure proper handling.',
-        
+
         // Custom Clearance Specific
         'custom-intro': 'Navigating customs regulations can be complex and time-consuming. Japan Resource Group\'s custom clearance services simplify the process, ensuring your goods clear customs quickly and efficiently. Our experienced team handles all documentation, compliance requirements, and regulatory procedures.',
         'documentation-title': 'Customs Documentation',
@@ -282,7 +282,7 @@ const translations = {
         'regulatory-compliance-desc': 'We stay updated with changing customs regulations and ensure your shipments comply with all applicable laws. Our team handles complex regulatory requirements and provides guidance on compliance issues.',
         'expedited-clearance-title': 'Expedited Clearance',
         'expedited-clearance-desc': 'For urgent shipments, we provide expedited clearance services that prioritize your cargo and ensure faster processing. Our relationships with customs officials help speed up the clearance process when needed.',
-        
+
         // Supply Chain Management Additional Content
         'supply-optimizing-title': 'Optimizing Your Supply Chain',
         'supply-optimizing-desc': 'At Japan Resource Group, we understand that a strong supply chain is the backbone of any successful business. Our supply chain management solutions are designed to streamline every step — from procurement and warehousing to transportation and final delivery. By combining advanced technology, industry expertise, and a dedicated team, we create end-to-end solutions that save costs, improve efficiency, and give businesses a competitive edge.',
@@ -303,7 +303,7 @@ const translations = {
         'supply-why-4': 'Customized solutions for diverse industries',
         'supply-why-5': 'Data-driven planning and demand forecasting',
         'supply-why-6': 'Cost-effective strategies without compromising reliability',
-        
+
         // Yard Services Additional Content
         'yard-comprehensive-title': 'Comprehensive Yard Operations',
         'yard-comprehensive-desc': 'Our yard services provide comprehensive support for all your cargo handling needs. From container management to cargo consolidation, we ensure efficient and secure operations that keep your supply chain moving smoothly.',
@@ -334,7 +334,7 @@ const translations = {
         'yard-integrated-desc': 'Yard services are fully integrated with our land, ocean, and supply chain operations. This means that cargo moves seamlessly between storage, transport, and final delivery without unnecessary delays. By providing complete coordination, Japan Resource Group ensures efficiency across the supply chain.',
         'yard-more-services-title': 'MORE SERVICES IN YARD',
         'yard-more-services-desc': 'Japan Resource Group\'s scope of services includes Container Vanning service, Car Export Service, Vehicle Pre-Export Inspection.',
-        
+
         // Custom Clearance Additional Content
         'custom-navigating-title': 'Navigating Customs with Confidence',
         'custom-navigating-desc': 'Customs clearance can be complex and time-consuming, but with Japan Resource Group\'s expertise, the process becomes smooth and efficient. Our experienced team handles all documentation, compliance requirements, and regulatory procedures to ensure your goods clear customs quickly and without delays.',
@@ -369,7 +369,7 @@ const translations = {
         'custom-understanding-desc': 'Customs clearance is a crucial step in global logistics, involving the accurate preparation and submission of documents required to import or export goods. At Japan Resource Group, we go beyond standard procedures by providing hands-on guidance, up-to-date compliance knowledge, and customized solutions tailored to your business. Whether you are importing raw materials or exporting finished products, our team ensures that your shipments move smoothly through every checkpoint, saving you time and cost.',
         'custom-guiding-title': 'Guiding You Seamlessly Through Every Stage of Customs Clearance',
         'custom-guiding-desc': 'At Japan Resource Group, our dedicated team of professionals ensures that you never have to navigate the complexities of customs alone. From document preparation and compliance checks to final cargo release, we provide step-by-step guidance with expertise and accuracy. With our support, the entire import and export clearance process becomes efficient, stress-free, and fully compliant with international trade regulations — giving you the confidence to focus on growing your business.',
-        
+
         // Footer Content
         'contact-japan': 'CONTACT JAPAN RESOURCE GROUP',
         'japan-services': 'JAPAN RESOURCE GROUP SERVICES',
@@ -407,13 +407,13 @@ const translations = {
         'land_transportation': '陸上輸送',
         'yard_services': 'ヤードサービス',
         'custom_clearance': '通関手続き',
-        
+
         // Main Navigation
         'home': 'ホーム',
         'about-us': '会社概要',
         'services': 'サービス',
         'contact': 'お問い合わせ',
-        
+
         // Common Page Elements
         'our-services': '私たちのサービス',
         'contact-japan': 'ジャパンリソースグループにお問い合わせ',
@@ -422,7 +422,7 @@ const translations = {
         'company-profile': '会社プロフィール',
         'about-japan': 'ジャパンリソースグループについて',
         'rights-reserved': 'すべての権利を保有。',
-        
+
         // About Page
         'about-title': 'ジャパンリソースグループについて',
         'about-subtitle': 'グローバル物流の信頼できるパートナー',
@@ -445,7 +445,7 @@ const translations = {
         'reason3-desc': '最先端の追跡・管理システム',
         'reason4': '24時間サポート',
         'reason4-desc': 'すべてのニーズに対応する24時間体制のサポート',
-        
+
         // Contact Page
         'contact-title': 'お問い合わせ',
         'contact-subtitle': 'チームにお問い合わせください',
@@ -462,7 +462,7 @@ const translations = {
         'office-hours-desc': '月曜日 - 金曜日: 午前9時 - 午後6時',
         'emergency-contact': '緊急連絡先',
         'emergency-desc': '緊急貨物の24時間サポート',
-        
+
         // Service Pages
         'ocean-title': '海上輸送',
         'ocean-subtitle': '信頼できる海上貨物ソリューション',
@@ -474,7 +474,7 @@ const translations = {
         'yard-subtitle': '包括的なヤード運営',
         'custom-title': '通関手続き',
         'custom-subtitle': '専門通関ソリューション',
-        
+
         // Common Service Elements
         'service-overview': 'サービス概要',
         'key-features': '主要機能',
@@ -484,10 +484,10 @@ const translations = {
         'learn-more': '詳細を見る',
         'contact-us': 'お問い合わせ',
         'request-info': '情報をリクエスト',
-        
+
         // Hero Section
         'hero-title': '私たちは、海運・陸運を問わず、包括的なサービスで世界中の物流ニーズを実行します',
-        
+
         // Slider Content
         'slider1-title': 'ジャパンロジスティクス',
         'slider1-desc': '信頼性の高い効率的な物流ソリューションで世界を繋ぐ',
@@ -499,7 +499,7 @@ const translations = {
         'slider3-list3': '通関手続きと書類作成',
         'slider4-title': 'ありがとうございます',
         'slider4-desc': '信頼できる物流パートナーとして選んでいただき、ありがとうございます',
-        
+
         // Departments
         'marketing-dept': 'マーケティング部門',
         'transport-dept': '輸送部門',
@@ -509,7 +509,7 @@ const translations = {
         'transport-desc': 'シラズが率いる輸送部門は、陸上および海上輸送を管理します。他の部門との効率的な連携を図りながら、スムーズな貨物移動、タイムリーな配送、安全および規制基準の遵守を確保します。',
         'booking-desc': 'シラズが監督する予約部門は、貨物予約と輸送スケジューリングを担当します。チームは正確な書類作成、タイムリーな予約、キャリアとクライアントとのシームレスな連携を確保します。',
         'operation-desc': 'ジュナイド・カーンが管理する運営部門は、日常の物流実行を担当します。貨物の処理から輸送・ヤードサービスとの連携まで、この部門はすべての運営がスムーズかつ効率的に実行されることを確保します。',
-        
+
         // Shipping Partners
         'shipping-providers': '船会社プロバイダー',
         'partnership-desc': '世界をリードする船会社との信頼できるパートナーシップにより、グローバル物流における卓越性を提供しています。これらの提携により、国際水域でのスムーズで安全かつ効率的な貨物移動を確保します。',
@@ -519,7 +519,7 @@ const translations = {
         'benefit3': '貨物安全性 – 高度な取り扱いと安全な輸送',
         'benefit4': '柔軟なオプション – 多様なビジネスニーズに適した幅広いキャリア選択',
         'benefit5': 'コスト効率性 – 品質を損なうことなく競争力のある価格',
-        
+
         // Contact Page Specific
         'contact-title': 'お問い合わせ',
         'contact-subtitle': 'チームにお問い合わせください',
@@ -545,7 +545,7 @@ const translations = {
         'office-hours-desc': '月曜日 - 金曜日: 午前9時 - 午後6時 (JST)',
         'emergency-contact': '緊急連絡先',
         'emergency-desc': '緊急貨物の24時間サポート',
-        
+
         // About Page Specific
         'about-title': 'ジャパンリソースグループについて',
         'about-subtitle': 'グローバル物流の信頼できるパートナー',
@@ -568,7 +568,7 @@ const translations = {
         'reason3-desc': '最先端の追跡・管理システム',
         'reason4': '24時間サポート',
         'reason4-desc': 'すべてのニーズに対応する24時間体制のサポート',
-        
+
         // Service Page Common Content
         'service-intro': 'お客様のビジネスニーズに合わせた包括的な物流ソリューション',
         'service-desc': '効率性、信頼性、お客様満足に焦点を当てたエンドツーエンドの物流サービスを提供します。',
@@ -583,7 +583,7 @@ const translations = {
         'request-quote': '見積もりをリクエスト',
         'call-now': '今すぐ電話',
         'email-us': 'メール送信',
-        
+
         // Ocean Transportation Specific
         'ocean-intro': 'ジャパンリソースグループは、日本と国際市場を結ぶ信頼性が高く効率的な海上輸送サービスを専門としています。フルコンテナロード（FCL）、レスタンコンテナロード（LCL）、特殊貨物など、私たちのチームは港から港までスムーズな調整を保証します。グローバル船会社との強力なパートナーシップにより、安全性、コンプライアンス、適時性を損なうことなく、費用対効果の高いソリューションを提供します。私たちのコミットメントは、すべてのクライアントにとって海上貨物をシンプル、透明、信頼できるものにすることです。',
         'fcl-lcl-title': 'フルコンテナロード（FCL）＆レスタンコンテナロード（LCL）',
@@ -603,7 +603,7 @@ const translations = {
         'why-ocean-4': '完全な書類作成、通関、コンプライアンスサポート',
         'why-ocean-5': '専用の貨物安全性、保険、リスク管理',
         'why-ocean-6': 'テクノロジー駆動の追跡とリアルタイム可視性',
-        
+
         // Land Transportation Specific
         'land-intro': 'ジャパンリソースグループは、お客様の貨物が日本国内および海外で効率的に移動することを保証する包括的な陸上輸送ソリューションを提供します。私たちの陸上貨物サービスは、ローカル配送から長距離輸送まで、あらゆる規模のビジネスに信頼性が高く費用対効果の高いソリューションを提供します。最新のフリートと経験豊富なドライバーにより、お客様の商品の適時かつ安全な輸送を保証します。',
         'local-delivery-title': 'ローカル＆地域配送',
@@ -638,7 +638,7 @@ const translations = {
         'integrated-solutions-subtitle': 'ジャパンリソースグループは、以下の分野でも完全なサービスを提供します。',
         'efficient-secure-title': 'ジャパンリソースグループが提供する効率的で安全な陸上輸送',
         'efficient-secure-desc': 'ジャパンリソースグループは、多様な顧客ニーズを満たすように設計された、スムーズで信頼性の高い陸上輸送ソリューションを保証します。専用輸送車両からコンテナ化輸送まで、安全な取り扱い、適時の配送、費用対効果の高い運営を保証します。物流業界での長年の経験により、私たちの専門陸上輸送サービスは、お客様に効率性、柔軟性、完全な安心を提供します。',
-        
+
         // Supply Chain Management Specific
         'supply-intro': 'ジャパンリソースグループでは、強力なサプライチェーンが成功するビジネスの基盤であることを理解しています。私たちのサプライチェーン管理ソリューションは、調達と倉庫管理から輸送と最終配送まで、すべてのステップを合理化するように設計されています。先進技術、業界専門知識、専用チームを組み合わせることで、コストを削減し、効率を向上させ、ビジネスに競争優位性を与えるエンドツーエンドソリューションを作成します。',
         'procurement-title': '戦略的調達',
@@ -649,7 +649,7 @@ const translations = {
         'logistics-optimization-desc': 'お客様の物流ネットワーク全体を分析し最適化して、コストを削減し、効率を向上させ、顧客満足度を高めます。私たちのソリューションには、ルート最適化、在庫管理、需要予測が含まれます。',
         'technology-integration-title': 'テクノロジー統合',
         'technology-integration-desc': 'リアルタイム追跡、自動レポート、予測分析を含む、サプライチェーン運用に最新技術を統合します。これにより、サプライチェーン全体の可視性とコントロールが向上します。',
-        
+
         // Yard Services Specific
         'yard-intro': 'ジャパンリソースグループは、お客様の貨物の効率的な取り扱いと保管を保証する包括的なヤードサービスを提供します。最新の施設と経験豊富なチームが、コンテナ取り扱い、貨物統合、保管管理の信頼できるソリューションを提供します。',
         'container-handling-title': 'コンテナ取り扱い',
@@ -660,7 +660,7 @@ const translations = {
         'storage-management-desc': '私たちの安全な保管施設は、適切な気候管理とセキュリティ対策を備えた貨物の一時保管を提供します。お客様のニーズに基づいて、短期および長期の保管ソリューションを提供します。',
         'inspection-services-title': '検査サービス',
         'inspection-services-desc': '入出荷貨物の包括的な検査サービスを提供し、品質管理と国際基準への準拠を保証します。私たちの認定検査員は、損傷を防ぎ、適切な取り扱いを確保するために徹底的なチェックを実施します。',
-        
+
         // Custom Clearance Specific
         'custom-intro': '通関規制のナビゲートは複雑で時間がかかる場合があります。ジャパンリソースグループの通関サービスは、プロセスを簡素化し、お客様の商品が迅速かつ効率的に通関することを保証します。私たちの経験豊富なチームは、すべての書類作成、コンプライアンス要件、規制手順を処理します。',
         'documentation-title': '通関書類作成',
@@ -671,7 +671,7 @@ const translations = {
         'regulatory-compliance-desc': '変化する通関規制に最新の状態を保ち、お客様の貨物がすべての適用法律に準拠することを保証します。私たちのチームは複雑な規制要件を処理し、コンプライアンス問題についてガイダンスを提供します。',
         'expedited-clearance-title': '迅速通関',
         'expedited-clearance-desc': '緊急貨物については、お客様の貨物を優先し、より迅速な処理を保証する迅速通関サービスを提供します。通関当局との関係により、必要な時に通関プロセスをスピードアップします。',
-        
+
         // Supply Chain Management Additional Content
         'supply-optimizing-title': 'サプライチェーンの最適化',
         'supply-optimizing-desc': 'ジャパンリソースグループでは、強力なサプライチェーンが成功するビジネスの基盤であることを理解しています。私たちのサプライチェーン管理ソリューションは、調達と倉庫管理から輸送と最終配送まで、すべてのステップを合理化するように設計されています。先進技術、業界専門知識、専用チームを組み合わせることで、コストを削減し、効率を向上させ、ビジネスに競争優位性を与えるエンドツーエンドソリューションを作成します。',
@@ -692,7 +692,7 @@ const translations = {
         'supply-why-4': '多様な業界向けのカスタマイズソリューション',
         'supply-why-5': 'データ駆動の計画と需要予測',
         'supply-why-6': '信頼性を損なうことのない費用対効果の高い戦略',
-        
+
         // Yard Services Additional Content
         'yard-comprehensive-title': '包括的なヤード運営',
         'yard-comprehensive-desc': '私たちのヤードサービスは、お客様の貨物取り扱いニーズに包括的なサポートを提供します。コンテナ管理から貨物統合まで、サプライチェーンをスムーズに動かし続ける効率的で安全な運営を保証します。',
@@ -723,7 +723,7 @@ const translations = {
         'yard-integrated-desc': 'ヤードサービスは、私たちの陸上、海上、サプライチェーン運営と完全に統合されています。これは、貨物が保管、輸送、最終配送の間を不要な遅延なくシームレスに移動することを意味します。完全な調整を提供することで、ジャパンリソースグループはサプライチェーン全体の効率性を保証します。',
         'yard-more-services-title': 'ヤードのより多くのサービス',
         'yard-more-services-desc': 'ジャパンリソースグループのサービス範囲には、コンテナバンニングサービス、自動車輸出サービス、車両輸出前検査が含まれます。',
-        
+
         // Custom Clearance Additional Content
         'custom-navigating-title': '自信を持って通関をナビゲート',
         'custom-navigating-desc': '通関手続きは複雑で時間がかかる場合がありますが、ジャパンリソースグループの専門知識により、プロセスはスムーズで効率的になります。経験豊富なチームがすべての書類作成、コンプライアンス要件、規制手順を処理し、お客様の商品が迅速に遅延なく通関することを保証します。',
@@ -758,7 +758,7 @@ const translations = {
         'custom-understanding-desc': '通関手続きはグローバル物流における重要なステップで、商品を輸入または輸出するために必要な書類の正確な準備と提出を含みます。ジャパンリソースグループでは、実践的なガイダンス、最新のコンプライアンス知識、お客様のビジネスに合わせたカスタマイズソリューションを提供することで、標準的な手順を超えています。原材料を輸入する場合でも完成品を輸出する場合でも、私たちのチームはお客様の貨物がすべてのチェックポイントをスムーズに通過し、時間とコストを節約することを保証します。',
         'custom-guiding-title': '通関手続きのすべての段階をシームレスにガイド',
         'custom-guiding-desc': 'ジャパンリソースグループでは、専用の専門家チームが、お客様が通関の複雑さを一人でナビゲートする必要がないことを保証します。書類準備とコンプライアンスチェックから最終貨物リリースまで、専門知識と正確性でステップバイステップのガイダンスを提供します。私たちのサポートにより、輸出入通関プロセス全体が効率的でストレスフリーになり、国際貿易規制に完全に準拠し、お客様がビジネスの成長に集中できる自信を与えます。',
-        
+
         // Footer Content
         'contact-japan': 'ジャパンリソースグループにお問い合わせ',
         'japan-services': 'ジャパンリソースグループサービス',
@@ -796,13 +796,13 @@ const translations = {
         'land_transportation': '陆路运输',
         'yard_services': '堆场服务',
         'custom_clearance': '清关服务',
-        
+
         // Main Navigation
         'home': '首页',
         'about-us': '关于我们',
         'services': '服务',
         'contact': '联系我们',
-        
+
         // Common Page Elements
         'our-services': '我们的服务',
         'contact-japan': '联系日本资源集团',
@@ -811,7 +811,7 @@ const translations = {
         'company-profile': '公司简介',
         'about-japan': '关于日本资源集团',
         'rights-reserved': '版权所有。',
-        
+
         // About Page
         'about-title': '关于日本资源集团',
         'about-subtitle': '您值得信赖的全球物流合作伙伴',
@@ -834,7 +834,7 @@ const translations = {
         'reason3-desc': '最先进的跟踪和管理系统',
         'reason4': '24/7支持',
         'reason4-desc': '全天候满足您的所有需求',
-        
+
         // Contact Page
         'contact-title': '联系我们',
         'contact-subtitle': '与我们的团队联系',
@@ -851,7 +851,7 @@ const translations = {
         'office-hours-desc': '周一 - 周五: 上午9:00 - 下午6:00',
         'emergency-contact': '紧急联系',
         'emergency-desc': '紧急货物的24/7支持',
-        
+
         // Service Pages
         'ocean-title': '海运运输',
         'ocean-subtitle': '可靠的海运解决方案',
@@ -863,7 +863,7 @@ const translations = {
         'yard-subtitle': '综合堆场运营',
         'custom-title': '清关服务',
         'custom-subtitle': '专业清关解决方案',
-        
+
         // Common Service Elements
         'service-overview': '服务概述',
         'key-features': '主要特点',
@@ -873,10 +873,10 @@ const translations = {
         'learn-more': '了解更多',
         'contact-us': '联系我们',
         'request-info': '请求信息',
-        
+
         // Hero Section
         'hero-title': '我们通过全面的服务满足您在全球范围内的物流需求，无论是海运还是陆运',
-        
+
         // Slider Content
         'slider1-title': '日本物流',
         'slider1-desc': '通过可靠高效的物流解决方案连接世界',
@@ -888,7 +888,7 @@ const translations = {
         'slider3-list3': '清关和文件处理',
         'slider4-title': '谢谢',
         'slider4-desc': '感谢您选择我们作为您值得信赖的物流合作伙伴',
-        
+
         // Departments
         'marketing-dept': '市场部',
         'transport-dept': '运输部',
@@ -898,7 +898,7 @@ const translations = {
         'transport-desc': '由Shiraz领导的运输部门管理陆路和海运运输。它确保货物运输顺畅，及时交付，并遵守安全和监管标准，同时与其他部门协调以提高效率。',
         'booking-desc': '同样由Shiraz监督的预订部门处理货物预订和运输调度。团队确保准确的文件处理，及时预订，以及与承运商和客户的无缝协调。',
         'operation-desc': '由Junaid Khan管理的运营部门负责日常物流执行。从处理货物到与运输和堆场服务协调，该部门确保所有运营顺利进行和高效。',
-        
+
         // Shipping Partners
         'shipping-providers': '船公司提供商',
         'partnership-desc': '我们与世界领先船公司的可信合作伙伴关系使我们能够在全球物流中提供卓越服务。通过这些联盟，我们确保在国际水域的顺畅、安全和高效的货物运输。',
@@ -908,7 +908,7 @@ const translations = {
         'benefit3': '货物安全 – 先进的处理和安全运输',
         'benefit4': '灵活选择 – 适合不同业务需求的广泛承运商选择',
         'benefit5': '成本效益 – 在不影响质量的情况下提供有竞争力的价格',
-        
+
         // Contact Page Specific
         'contact-title': '联系我们',
         'contact-subtitle': '与我们的团队联系',
@@ -934,7 +934,7 @@ const translations = {
         'office-hours-desc': '周一 - 周五: 上午9:00 - 下午6:00 (JST)',
         'emergency-contact': '紧急联系',
         'emergency-desc': '紧急货物的24/7支持',
-        
+
         // About Page Specific
         'about-title': '关于日本资源集团',
         'about-subtitle': '您值得信赖的全球物流合作伙伴',
@@ -957,7 +957,7 @@ const translations = {
         'reason3-desc': '最先进的跟踪和管理系统',
         'reason4': '24/7支持',
         'reason4-desc': '全天候满足您的所有需求',
-        
+
         // Service Page Common Content
         'service-intro': '为您的业务需求量身定制的综合物流解决方案',
         'service-desc': '我们提供端到端的物流服务，专注于效率、可靠性和客户满意度。',
@@ -972,7 +972,7 @@ const translations = {
         'request-quote': '获取报价',
         'call-now': '立即致电',
         'email-us': '发送邮件',
-        
+
         // Ocean Transportation Specific
         'ocean-intro': '日本资源集团专门提供连接日本与国际市场的可靠高效的海上运输服务。无论是整箱货（FCL）、拼箱货（LCL）还是特殊货物，我们的团队都确保从港口到港口的顺畅协调。通过与全球船公司的强大合作伙伴关系，我们在不损害安全性、合规性或及时性的情况下提供具有成本效益的解决方案。我们的承诺是让每个客户的海运变得简单、透明和可靠。',
         'fcl-lcl-title': '整箱货（FCL）和拼箱货（LCL）',
@@ -992,7 +992,7 @@ const translations = {
         'why-ocean-4': '完整的文件处理、海关和合规支持',
         'why-ocean-5': '专门的货物安全、保险和风险管理',
         'why-ocean-6': '技术驱动的跟踪和实时可见性',
-        
+
         // Land Transportation Specific
         'land-intro': '日本资源集团提供全面的陆路运输解决方案，确保您的货物在日本及海外高效移动。我们的陆路货运服务涵盖从本地配送到长途运输的一切，为各种规模的企业提供可靠和具有成本效益的解决方案。凭借现代化的车队和经验丰富的司机，我们保证您货物的及时和安全运输。',
         'local-delivery-title': '本地和区域配送',
@@ -1027,7 +1027,7 @@ const translations = {
         'integrated-solutions-subtitle': '日本资源集团还在以下领域提供完整服务。',
         'efficient-secure-title': '日本资源集团提供的高效安全陆路运输',
         'efficient-secure-desc': '日本资源集团确保满足不同客户需求设计的顺畅可靠的陆路运输解决方案。从专用运输车辆到集装箱运输，我们保证安全处理、及时交付和成本效益运营。凭借在物流行业的多年经验，我们的专业陆路运输服务为客户提供效率、灵活性和完全安心。',
-        
+
         // Supply Chain Management Specific
         'supply-intro': '在日本资源集团，我们理解强大的供应链是任何成功企业的支柱。我们的供应链管理解决方案旨在简化从采购和仓储到运输和最终配送的每一步。通过结合先进技术、行业专业知识和专业团队，我们创建端到端的解决方案，节省成本、提高效率并为企业提供竞争优势。',
         'procurement-title': '战略采购',
@@ -1038,7 +1038,7 @@ const translations = {
         'logistics-optimization-desc': '我们分析并优化您的整个物流网络，以降低成本、提高效率并增强客户满意度。我们的解决方案包括路线优化、库存管理和需求预测。',
         'technology-integration-title': '技术集成',
         'technology-integration-desc': '我们将尖端技术集成到您的供应链运营中，包括实时跟踪、自动报告和预测分析。这确保了对整个供应链的更好可见性和控制。',
-        
+
         // Yard Services Specific
         'yard-intro': '日本资源集团提供全面的堆场服务，确保您货物的高效处理和存储。我们最先进的设施和经验丰富的团队为集装箱处理、货物整合和存储管理提供可靠的解决方案。',
         'container-handling-title': '集装箱处理',
@@ -1049,7 +1049,7 @@ const translations = {
         'storage-management-desc': '我们的安全存储设施为您的货物提供临时存储，配备适当的气候控制和安全措施。我们根据您的需求提供短期和长期存储解决方案。',
         'inspection-services-title': '检验服务',
         'inspection-services-desc': '我们为进出货物提供全面的检验服务，确保质量控制和符合国际标准。我们的认证检验员进行彻底检查，以防止损坏并确保适当处理。',
-        
+
         // Custom Clearance Specific
         'custom-intro': '导航海关法规可能复杂且耗时。日本资源集团的海关清关服务简化了流程，确保您的货物快速高效地清关。我们经验丰富的团队处理所有文件、合规要求和监管程序。',
         'documentation-title': '海关文件处理',
@@ -1060,7 +1060,7 @@ const translations = {
         'regulatory-compliance-desc': '我们保持对不断变化的海关法规的更新，并确保您的货物符合所有适用法律。我们的团队处理复杂的监管要求并提供合规问题指导。',
         'expedited-clearance-title': '快速清关',
         'expedited-clearance-desc': '对于紧急货物，我们提供快速清关服务，优先处理您的货物并确保更快的处理。我们与海关官员的关系在需要时帮助加快清关流程。',
-        
+
         // Supply Chain Management Additional Content
         'supply-optimizing-title': '优化您的供应链',
         'supply-optimizing-desc': '在日本资源集团，我们理解强大的供应链是任何成功企业的支柱。我们的供应链管理解决方案旨在简化从采购和仓储到运输和最终配送的每一步。通过结合先进技术、行业专业知识和专业团队，我们创建端到端的解决方案，节省成本、提高效率并为企业提供竞争优势。',
@@ -1081,7 +1081,7 @@ const translations = {
         'supply-why-4': '针对不同行业的定制解决方案',
         'supply-why-5': '数据驱动的规划和需求预测',
         'supply-why-6': '在不影响可靠性的前提下提供成本效益策略',
-        
+
         // Yard Services Additional Content
         'yard-comprehensive-title': '综合堆场运营',
         'yard-comprehensive-desc': '我们的堆场服务为您的所有货物处理需求提供全面支持。从集装箱管理到货物整合，我们确保高效安全的运营，保持您的供应链顺畅运行。',
@@ -1112,7 +1112,7 @@ const translations = {
         'yard-integrated-desc': '堆场服务与我们的陆路、海运和供应链运营完全集成。这意味着货物在存储、运输和最终配送之间无缝移动，没有不必要的延迟。通过提供完全协调，日本资源集团确保整个供应链的效率。',
         'yard-more-services-title': '堆场更多服务',
         'yard-more-services-desc': '日本资源集团的服务范围包括集装箱装箱服务、汽车出口服务、车辆出口前检验。',
-        
+
         // Custom Clearance Additional Content
         'custom-navigating-title': '自信地导航海关',
         'custom-navigating-desc': '海关清关可能复杂且耗时，但凭借日本资源集团的专业知识，流程变得顺畅高效。我们经验丰富的团队处理所有文件、合规要求和监管程序，确保您的货物快速清关，无延误。',
@@ -1147,7 +1147,7 @@ const translations = {
         'custom-understanding-desc': '海关清关是全球物流中的关键步骤，涉及准确准备和提交进出口货物所需的文件。在日本资源集团，我们通过提供实践指导、最新合规知识和为您的业务量身定制的解决方案，超越标准程序。无论您是进口原材料还是出口成品，我们的团队都确保您的货物顺利通过每个检查点，为您节省时间和成本。',
         'custom-guiding-title': '无缝引导您完成海关清关的每个阶段',
         'custom-guiding-desc': '在日本资源集团，我们的专业团队确保您永远不必独自应对海关的复杂性。从文件准备和合规检查到最终货物放行，我们提供专业和准确的逐步指导。在我们的支持下，整个进出口清关过程变得高效、无压力，并完全符合国际贸易法规——让您有信心专注于发展业务。',
-        
+
         // Footer Content
         'contact-japan': '联系日本资源集团',
         'japan-services': '日本资源集团服务',
@@ -1185,13 +1185,13 @@ const translations = {
         'land_transportation': '육상 운송',
         'yard_services': '야드 서비스',
         'custom_clearance': '통관 서비스',
-        
+
         // Main Navigation
         'home': '홈',
         'about-us': '회사 소개',
         'services': '서비스',
         'contact': '문의',
-        
+
         // Common Page Elements
         'our-services': '우리의 서비스',
         'contact-japan': 'Japan Resource Group 문의',
@@ -1200,7 +1200,7 @@ const translations = {
         'company-profile': '회사 프로필',
         'about-japan': 'Japan Resource Group 소개',
         'rights-reserved': '모든 권리 보유.',
-        
+
         // About Page
         'about-title': 'Japan Resource Group 소개',
         'about-subtitle': '글로벌 물류의 신뢰할 수 있는 파트너',
@@ -1223,7 +1223,7 @@ const translations = {
         'reason3-desc': '최첨단 추적 및 관리 시스템',
         'reason4': '24시간 지원',
         'reason4-desc': '모든 요구사항에 대한 24시간 지원',
-        
+
         // Contact Page
         'contact-title': '문의하기',
         'contact-subtitle': '팀에 문의하세요',
@@ -1240,7 +1240,7 @@ const translations = {
         'office-hours-desc': '월요일 - 금요일: 오전 9시 - 오후 6시',
         'emergency-contact': '긴급 연락처',
         'emergency-desc': '긴급 화물의 24시간 지원',
-        
+
         // Service Pages
         'ocean-title': '해상 운송',
         'ocean-subtitle': '신뢰할 수 있는 해상 화물 솔루션',
@@ -1252,7 +1252,7 @@ const translations = {
         'yard-subtitle': '포괄적인 야드 운영',
         'custom-title': '통관 서비스',
         'custom-subtitle': '전문 통관 솔루션',
-        
+
         // Common Service Elements
         'service-overview': '서비스 개요',
         'key-features': '주요 기능',
@@ -1262,10 +1262,10 @@ const translations = {
         'learn-more': '자세히 보기',
         'contact-us': '문의하기',
         'request-info': '정보 요청',
-        
+
         // Hero Section
         'hero-title': '해상이든 육상이든 포괄적인 서비스로 전 세계의 물류 요구사항을 수행합니다',
-        
+
         // Slider Content
         'slider1-title': '일본 물류',
         'slider1-desc': '신뢰할 수 있고 효율적인 물류 솔루션으로 세계를 연결합니다',
@@ -1277,7 +1277,7 @@ const translations = {
         'slider3-list3': '통관 및 서류 처리',
         'slider4-title': '감사합니다',
         'slider4-desc': '신뢰할 수 있는 물류 파트너로 선택해 주셔서 감사합니다',
-        
+
         // Departments
         'marketing-dept': '마케팅 부서',
         'transport-dept': '운송 부서',
@@ -1287,7 +1287,7 @@ const translations = {
         'transport-desc': 'Shiraz가 이끄는 운송 부서는 육상 및 해상 운송을 관리합니다. 다른 부서와의 효율적인 조정을 통해 원활한 화물 이동, 적시 배송, 안전 및 규제 기준 준수를 보장합니다.',
         'booking-desc': 'Shiraz가 감독하는 예약 부서는 화물 예약 및 운송 스케줄링을 처리합니다. 팀은 정확한 서류 처리, 적시 예약, 운송업체 및 고객과의 원활한 조정을 보장합니다.',
         'operation-desc': 'Junaid Khan이 관리하는 운영 부서는 일상적인 물류 실행을 담당합니다. 화물 처리부터 운송 및 야드 서비스와의 조정까지, 이 부서는 모든 운영이 원활하고 효율적으로 실행되도록 보장합니다.',
-        
+
         // Shipping Partners
         'shipping-providers': '선사 제공업체',
         'partnership-desc': '세계 선도 선사와의 신뢰할 수 있는 파트너십을 통해 글로벌 물류에서 우수성을 제공합니다. 이러한 제휴를 통해 국제 수역에서 원활하고 안전하며 효율적인 화물 이동을 보장합니다.',
@@ -1297,7 +1297,7 @@ const translations = {
         'benefit3': '화물 안전성 – 고급 처리 및 안전한 운송',
         'benefit4': '유연한 옵션 – 다양한 비즈니스 요구에 맞는 광범위한 운송업체 선택',
         'benefit5': '비용 효율성 – 품질을 저하시키지 않고 경쟁력 있는 가격',
-        
+
         // Contact Page Specific
         'contact-title': '문의하기',
         'contact-subtitle': '팀에 문의하세요',
@@ -1323,7 +1323,7 @@ const translations = {
         'office-hours-desc': '월요일 - 금요일: 오전 9시 - 오후 6시 (JST)',
         'emergency-contact': '긴급 연락처',
         'emergency-desc': '긴급 화물의 24시간 지원',
-        
+
         // About Page Specific
         'about-title': 'Japan Resource Group 소개',
         'about-subtitle': '글로벌 물류의 신뢰할 수 있는 파트너',
@@ -1346,7 +1346,7 @@ const translations = {
         'reason3-desc': '최첨단 추적 및 관리 시스템',
         'reason4': '24시간 지원',
         'reason4-desc': '모든 요구사항에 대한 24시간 지원',
-        
+
         // Service Page Common Content
         'service-intro': '귀하의 비즈니스 요구사항에 맞춤화된 포괄적인 물류 솔루션',
         'service-desc': '효율성, 신뢰성, 고객 만족에 중점을 둔 엔드투엔드 물류 서비스를 제공합니다.',
@@ -1361,7 +1361,7 @@ const translations = {
         'request-quote': '견적 요청',
         'call-now': '지금 전화',
         'email-us': '이메일 보내기',
-        
+
         // Ocean Transportation Specific
         'ocean-intro': 'Japan Resource Group은 일본과 국제 시장을 연결하는 신뢰할 수 있고 효율적인 해상 운송 서비스를 전문으로 합니다. 풀 컨테이너 로드(FCL), 레스 컨테이너 로드(LCL) 또는 특수 화물이든, 우리 팀은 항구에서 항구까지 원활한 조정을 보장합니다. 글로벌 선사와의 강력한 파트너십을 통해 안전성, 규정 준수 또는 적시성을 저해하지 않고 비용 효율적인 솔루션을 제공합니다. 우리의 약속은 모든 고객에게 해상 화물을 단순하고 투명하며 신뢰할 수 있게 만드는 것입니다.',
         'fcl-lcl-title': '풀 컨테이너 로드(FCL) 및 레스 컨테이너 로드(LCL)',
@@ -1381,7 +1381,7 @@ const translations = {
         'why-ocean-4': '완전한 서류 처리, 세관 및 규정 준수 지원',
         'why-ocean-5': '전용 화물 안전, 보험 및 위험 관리',
         'why-ocean-6': '기술 기반 추적 및 실시간 가시성',
-        
+
         // Land Transportation Specific
         'land-intro': 'Japan Resource Group은 귀하의 화물이 일본 및 해외에서 효율적으로 이동하도록 보장하는 포괄적인 육상 운송 솔루션을 제공합니다. 우리의 육상 화물 서비스는 로컬 배송부터 장거리 운송까지 모든 것을 다루며, 모든 규모의 비즈니스에 신뢰할 수 있고 비용 효율적인 솔루션을 제공합니다. 현대적인 차량과 경험 많은 운전자로 귀하의 화물의 적시적이고 안전한 운송을 보장합니다.',
         'local-delivery-title': '로컬 및 지역 배송',
@@ -1416,7 +1416,7 @@ const translations = {
         'integrated-solutions-subtitle': 'JAPAN RESOURCE GROUP은 다음 분야에서도 완전한 서비스를 제공합니다.',
         'efficient-secure-title': 'Japan Resource Group이 제공하는 효율적이고 안전한 육상 운송',
         'efficient-secure-desc': 'Japan Resource Group은 다양한 고객 요구를 충족하도록 설계된 원활하고 신뢰할 수 있는 육상 운송 솔루션을 보장합니다. 전용 운송 차량부터 컨테이너 운송까지, 안전한 취급, 적시 배송, 비용 효율적인 운영을 보장합니다. 물류 업계의 수년간의 경험을 바탕으로, 우리의 전문 육상 운송 서비스는 고객에게 효율성, 유연성, 완전한 안심을 제공합니다.',
-        
+
         // Supply Chain Management Specific
         'supply-intro': 'Japan Resource Group에서는 강력한 공급망이 성공적인 비즈니스의 핵심이라는 것을 이해합니다. 우리의 공급망 관리 솔루션은 조달 및 창고 관리부터 운송 및 최종 배송까지 모든 단계를 간소화하도록 설계되었습니다. 첨단 기술, 업계 전문성 및 전용 팀을 결합하여 비용을 절약하고 효율성을 향상시키며 비즈니스에 경쟁 우위를 제공하는 엔드투엔드 솔루션을 만듭니다.',
         'procurement-title': '전략적 조달',
@@ -1427,7 +1427,7 @@ const translations = {
         'logistics-optimization-desc': '비용을 절감하고 효율성을 향상시키며 고객 만족도를 높이기 위해 전체 물류 네트워크를 분석하고 최적화합니다. 우리의 솔루션에는 경로 최적화, 재고 관리 및 수요 예측이 포함됩니다.',
         'technology-integration-title': '기술 통합',
         'technology-integration-desc': '실시간 추적, 자동화된 보고서 및 예측 분석을 포함하여 공급망 운영에 최첨단 기술을 통합합니다. 이를 통해 전체 공급망에 대한 더 나은 가시성과 제어를 보장합니다.',
-        
+
         // Yard Services Specific
         'yard-intro': 'Japan Resource Group은 귀하의 화물의 효율적인 처리 및 저장을 보장하는 포괄적인 야드 서비스를 제공합니다. 최첨단 시설과 경험 많은 팀이 컨테이너 처리, 화물 통합 및 저장 관리를 위한 신뢰할 수 있는 솔루션을 제공합니다.',
         'container-handling-title': '컨테이너 처리',
@@ -1438,7 +1438,7 @@ const translations = {
         'storage-management-desc': '우리의 안전한 저장 시설은 적절한 기후 제어 및 보안 조치를 갖춘 화물의 임시 저장을 제공합니다. 귀하의 요구에 따라 단기 및 장기 저장 솔루션을 제공합니다.',
         'inspection-services-title': '검사 서비스',
         'inspection-services-desc': '입출고 화물에 대한 포괄적인 검사 서비스를 제공하여 품질 관리 및 국제 기준 준수를 보장합니다. 우리의 인증 검사원은 손상을 방지하고 적절한 처리를 보장하기 위해 철저한 검사를 수행합니다.',
-        
+
         // Custom Clearance Specific
         'custom-intro': '세관 규정을 탐색하는 것은 복잡하고 시간이 많이 걸릴 수 있습니다. Japan Resource Group의 세관 통관 서비스는 프로세스를 단순화하여 귀하의 화물이 빠르고 효율적으로 통관되도록 보장합니다. 우리의 경험 많은 팀은 모든 서류 처리, 규정 준수 요구사항 및 규제 절차를 처리합니다.',
         'documentation-title': '세관 서류 처리',
@@ -1449,7 +1449,7 @@ const translations = {
         'regulatory-compliance-desc': '변화하는 세관 규정에 최신 상태를 유지하고 귀하의 화물이 모든 적용 법률을 준수하도록 보장합니다. 우리 팀은 복잡한 규제 요구사항을 처리하고 준수 문제에 대한 지침을 제공합니다.',
         'expedited-clearance-title': '신속 통관',
         'expedited-clearance-desc': '긴급 화물의 경우, 귀하의 화물을 우선시하고 더 빠른 처리를 보장하는 신속 통관 서비스를 제공합니다. 세관 공무원과의 관계는 필요할 때 통관 프로세스를 가속화하는 데 도움이 됩니다.',
-        
+
         // Supply Chain Management Additional Content
         'supply-optimizing-title': '공급망 최적화',
         'supply-optimizing-desc': 'Japan Resource Group에서는 강력한 공급망이 성공적인 비즈니스의 핵심이라는 것을 이해합니다. 우리의 공급망 관리 솔루션은 조달 및 창고 관리부터 운송 및 최종 배송까지 모든 단계를 간소화하도록 설계되었습니다. 첨단 기술, 업계 전문성 및 전용 팀을 결합하여 비용을 절약하고 효율성을 향상시키며 비즈니스에 경쟁 우위를 제공하는 엔드투엔드 솔루션을 만듭니다.',
@@ -1470,7 +1470,7 @@ const translations = {
         'supply-why-4': '다양한 산업을 위한 맞춤형 솔루션',
         'supply-why-5': '데이터 기반 계획 및 수요 예측',
         'supply-why-6': '신뢰성을 저해하지 않는 비용 효율적 전략',
-        
+
         // Yard Services Additional Content
         'yard-comprehensive-title': '포괄적인 야드 운영',
         'yard-comprehensive-desc': '우리의 야드 서비스는 귀하의 모든 화물 처리 요구에 포괄적인 지원을 제공합니다. 컨테이너 관리부터 화물 통합까지, 공급망이 원활하게 움직이도록 하는 효율적이고 안전한 운영을 보장합니다.',
@@ -1501,7 +1501,7 @@ const translations = {
         'yard-integrated-desc': '야드 서비스는 우리의 육상, 해상, 공급망 운영과 완전히 통합되어 있습니다. 이는 화물이 저장, 운송, 최종 배송 사이를 불필요한 지연 없이 원활하게 이동한다는 것을 의미합니다. 완전한 조정을 제공함으로써 Japan Resource Group은 공급망 전반의 효율성을 보장합니다.',
         'yard-more-services-title': '야드의 더 많은 서비스',
         'yard-more-services-desc': 'Japan Resource Group의 서비스 범위에는 컨테이너 바닝 서비스, 자동차 수출 서비스, 차량 수출 전 검사가 포함됩니다.',
-        
+
         // Custom Clearance Additional Content
         'custom-navigating-title': '자신 있게 세관 탐색',
         'custom-navigating-desc': '세관 통관은 복잡하고 시간이 많이 걸릴 수 있지만, Japan Resource Group의 전문성으로 프로세스가 원활하고 효율적이 됩니다. 우리의 경험 많은 팀은 모든 서류 처리, 규정 준수 요구사항 및 규제 절차를 처리하여 귀하의 화물이 지연 없이 빠르게 통관되도록 보장합니다.',
@@ -1536,7 +1536,7 @@ const translations = {
         'custom-understanding-desc': '세관 통관은 글로벌 물류의 중요한 단계로, 상품을 수입하거나 수출하는 데 필요한 서류의 정확한 준비와 제출을 포함합니다. Japan Resource Group에서는 실무 가이드, 최신 규정 준수 지식, 귀하의 비즈니스에 맞춤화된 솔루션을 제공하여 표준 절차를 뛰어넘습니다. 원자재를 수입하든 완제품을 수출하든, 우리 팀은 귀하의 화물이 모든 검문소를 원활하게 통과하여 시간과 비용을 절약하도록 보장합니다.',
         'custom-guiding-title': '세관 통관의 모든 단계를 원활하게 안내',
         'custom-guiding-desc': 'Japan Resource Group에서는 전용 전문가 팀이 귀하가 세관의 복잡성을 혼자서 탐색할 필요가 없도록 보장합니다. 서류 준비와 규정 준수 검사부터 최종 화물 방출까지, 전문성과 정확성으로 단계별 가이드를 제공합니다. 우리의 지원으로 전체 수출입 통관 프로세스가 효율적이고 스트레스 없이 되며, 국제 무역 규정에 완전히 준수하여 비즈니스 성장에 집중할 수 있는 자신감을 제공합니다.',
-        
+
         // Footer Content
         'contact-japan': 'Japan Resource Group 문의',
         'japan-services': 'Japan Resource Group 서비스',
@@ -1589,13 +1589,13 @@ function updatePageContent() {
 }
 
 // Initialize language on page load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Set the selected language in dropdown
     const languageSelect = document.getElementById('language-select');
     if (languageSelect) {
         languageSelect.value = currentLanguage;
     }
-    
+
     // Update page content
     updatePageContent();
 });

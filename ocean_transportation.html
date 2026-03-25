@@ -8,46 +8,45 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="homepage">
     <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
     <header class="header-above">
-        <div class="slide-in-right">
-         <ul class="nav-list">
-             <li><a href="javascript:void(0)">
-                 <i class="fas fa-search"></i>
-             </a></li>
+       <div class="slide-in-right">
+        <ul class="nav-list">
+            <li><a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>booking@japanresourcegroup.com</span>
+            </a></li>
+            <li><a href="#" class="search-toggle"><i class="fas fa-search"></i></a></li>
+            <li class="language-select">
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+                <option value="ko">한국어</option>
+            </select>
+        </li>
+        <li><a href="contact.html">
+            <i class="fas fa-phone-alt"></i>
+            <span data-translate="get-in-touch">Get In Touch</span>
+        </a></li>
       
-         <li class="language-select">
-             <select id="language-select" onchange="changeLanguage(this.value)">
-                 <option value="en">English</option>
-                 <option value="ja">日本語</option>
-                 <option value="zh">中文</option>
-                 <option value="ko">한국어</option>
-             </select>
-         </li>
-         <li><a href="contact.html">
-             <i class="fas fa-phone-alt"></i>
-             <span data-translate="get-in-touch">Get In Touch</span>
-         </a></li>
-       
-         </ul>
-        </div>
-     </header>
-    
+        </ul>
+       </div>
+    </header>
     <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="logo">
-                </a>
+                <img src="images/logo.png" alt="logo">
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" data-translate="about-us">About Us</a></li>
                     <li class="dropdown">
-                        <a href="#services" class="dropdown-toggle active">Services <i class="fas fa-chevron-down"></i></a>
+                        <a href="#services" class="dropdown-toggle active" data-translate="services">Services <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="ocean_transportation.html" class="active">Ocean Transportation</a></li>
                             <li><a href="supply_chain_management.html">Supply Chain Management</a></li>
@@ -56,12 +55,13 @@
                             <li><a href="custom_clearance.html">Custom Clearance</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                   
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <i class="fas fa-globe"></i> <a href="contact.html" class="">Global Network</a>
-             </div>
+               <a href="contact.html" class="header-cta-btn"><i class="fas fa-globe"></i><span>Global Network</span></a>
+            </div>
             <div class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -74,105 +74,116 @@
             <ul class="mobile-nav-list">
                 <li><a href="index.html" class="mobile-nav-link">Home</a></li>
                 <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
-                <li class="mobile-dropdown">
+                <li class="mobile-dropdown active">
                     <a href="#services" class="mobile-nav-link mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
                     <ul class="mobile-dropdown-menu">
-                        <li><a href="ocean_transportation.html" class="mobile-nav-link">Ocean Transportation</a></li>
+                        <li><a href="ocean_transportation.html" class="mobile-nav-link active">Ocean Transportation</a></li>
                         <li><a href="supply_chain_management.html" class="mobile-nav-link">Supply Chain Management</a></li>
                         <li><a href="land_transportation.html" class="mobile-nav-link">Land Transportation</a></li>
                         <li><a href="yard_services.html" class="mobile-nav-link">Yard Services</a></li>
                         <li><a href="custom_clearance.html" class="mobile-nav-link">Custom Clearance</a></li>
                     </ul>
                 </li>
+               
                 <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Banner -->
-    <section class="ocean-banner bounce-in-up">
-        <div class="banner-overlay">
-            <h1 class="text-reveal bounce-elastic" data-translate="ocean-title">OCEAN TRANSPORTATION</h1>
-        </div>
+    <section class="ocean-banner">
+    
     </section>
 
     <!-- Ocean Transportation Content -->
     <div class="ocean-container">
         <div class="ocean-main-content">
-            <!-- Introduction Section -->
-            <!-- <div class="intro-section fade-in-up">
-                <div class="intro-banner">
-                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cargo Ship at Sea">
-                    <div class="intro-content">
-                        <h2 class="fade-in-up">Japan Resource Group | Ocean Transportation</h2>
-                        <p class="fade-in-delay-1">Connecting continents through reliable ocean transportation services. Our global shipping solutions ensure your cargo reaches its destination safely, efficiently, and on time. With strategic partnerships and advanced logistics technology, we make global trade seamless and cost-effective.</p>
-                        <h3 class="fade-in-delay-2">WHY OCEAN FREIGHT!</h3>
+            <!-- Modern Intro Split Section -->
+            <section class="modern-section">
+                <div class="why-us-split bounce-in-up">
+                    <div class="why-us-image">
+                        <img src="images/ocean/choose.jpg" alt="Ocean Transportation">
+                    </div>
+                    <div class="why-us-content">
+                        <h2 class="bounce-in-left" data-translate="ocean-title">OCEAN TRANSPORTATION</h2>
+                        <h3 class="bounce-in-up stagger-1" data-translate="ocean-subtitle" style="color: var(--primary-red); margin-bottom: 1.5rem;">Global Shipping Made Simple</h3>
+                        <p class="bounce-in-up stagger-2" data-translate="ocean-intro">At Japan Resource Group, we specialize in reliable and efficient ocean transportation services that connect Japan to international markets. Whether it's full container loads (FCL), less-than-container loads (LCL), or specialized cargo, our team ensures smooth coordination from port to port. With strong partnerships across global shipping lines, we deliver cost-effective solutions without compromising on safety, compliance, or timeliness.</p>
+                        <a href="contact.html" class="download-btn bounce-in-up stagger-3" style="text-decoration: none;"><i class="fas fa-ship"></i> Request Quote</a>
                     </div>
                 </div>
-            </div> -->
+            </section>
 
-            <!-- Main Content Grid -->
-            <div class="ocean-content-grid">
-                <!-- Left Column - Text Content -->
-                <div class="ocean-text-content bounce-in-left">
-                    <h2 class="bounce-scale" data-translate="ocean-title">OCEAN TRANSPORTATION</h2>
-                    
-                    <div class="content-section bounce-in-up stagger-1 hover-lift">
-                        <h3 class="bounce-scale" data-translate="ocean-subtitle">Global Shipping Made Simple</h3>
-                        <p class="fade-in-delay-1" data-translate="ocean-intro">At Japan Resource Group, we specialize in reliable and efficient ocean transportation services that connect Japan to international markets. Whether it's full container loads (FCL), less-than-container loads (LCL), or specialized cargo, our team ensures smooth coordination from port to port. With strong partnerships across global shipping lines, we deliver cost-effective solutions without compromising on safety, compliance, or timeliness. Our commitment is to make sea freight simple, transparent, and dependable for every client.</p>
+            <!-- Modern Capabilities Grid -->
+            <section class="modern-section">
+                <h2 class="section-title-center" data-translate="core-capabilities">Our Core Capabilities</h2>
+                <div class="values-grid">
+                    <div class="value-card bounce-in-up stagger-1">
+                        <i class="fas fa-box"></i>
+                        <h4 data-translate="fcl-lcl-title">FCL & LCL</h4>
+                        <p data-translate="fcl-lcl-desc">Flexible shipping options including Full Container Load and Less-than-Container Load to match your shipment size and budget.</p>
                     </div>
-
-                    <div class="content-section bounce-in-up stagger-2 hover-lift">
-                        <h3 class="bounce-scale" data-translate="fcl-lcl-title">Full Container Load (FCL) & Less-than-Container Load (LCL)</h3>
-                        <p class="bounce-elastic stagger-3" data-translate="fcl-lcl-desc">We offer flexible shipping options to meet diverse business needs. For large shipments, our full container load (FCL) services guarantee exclusive use of containers, ensuring maximum security and faster handling. For smaller shipments, our less-than-container load (LCL) services provide cost savings by consolidating cargo with other consignments. No matter the size, Japan Resource Group makes sure every container is handled with precision and care.</p>
+                    <div class="value-card bounce-in-up stagger-2">
+                        <i class="fas fa-network-wired"></i>
+                        <h4 data-translate="global-network-title">Global Network</h4>
+                        <p data-translate="global-network-desc">Strategic partnerships with major global shipping lines and port operators for reliable vessel space and competitive rates.</p>
                     </div>
-
-                    <div class="content-section bounce-in-up stagger-3 hover-lift">
-                        <h3 class="bounce-scale" data-translate="global-network-title">Global Network & Strategic Partnerships</h3>
-                        <p class="bounce-elastic stagger-4" data-translate="global-network-desc">Our ocean transportation services are supported by a strong global network of shipping lines and port operators. This allows us to secure reliable vessel space, competitive freight rates, and priority handling. By maintaining close relationships with international carriers, Japan Resource Group offers consistent sailing schedules and dependable connections to major trade routes worldwide.</p>
+                    <div class="value-card bounce-in-up stagger-3">
+                        <i class="fas fa-file-invoice"></i>
+                        <h4 data-translate="documentation-title">Documentation</h4>
+                        <p data-translate="documentation-desc">Expert handling of all customs requirements, import/export permits, and compliance standards for a hassle-free process.</p>
                     </div>
-
-                    <div class="content-section fade-in-up stagger-4 hover-lift">
-                        <h3 class="text-reveal" data-translate="documentation-title">End-to-End Documentation & Compliance</h3>
-                        <p class="fade-in-delay-1" data-translate="documentation-desc">Shipping internationally involves strict regulations and paperwork. Our expert team takes care of all documentation, customs requirements, and compliance standards to ensure a hassle-free process for clients. From bills of lading to export/import permits, we manage every step with accuracy and transparency, saving time and avoiding costly delays.</p>
+                    <div class="value-card bounce-in-up stagger-4">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4 data-translate="cargo-safety-title">Cargo Safety</h4>
+                        <p data-translate="cargo-safety-desc">Prioritizing safety with secure loading, stowage, and monitoring, backed by comprehensive risk management practices.</p>
                     </div>
-
-                    <div class="content-section fade-in-up stagger-5 hover-lift">
-                        <h3 class="text-reveal" data-translate="cargo-safety-title">Cargo Safety & Risk Management</h3>
-                        <p class="fade-in-delay-1" data-translate="cargo-safety-desc">Ocean freight requires careful handling, and at Japan Resource Group, we prioritize cargo safety above all. Our team ensures secure loading, stowage, and monitoring throughout the shipping journey. Insurance options and risk management practices are also available to safeguard against unforeseen challenges. With us, clients enjoy peace of mind knowing their goods are protected from origin to destination.</p>
-                    </div>
-
-                    <div class="content-section fade-in-up stagger-6 hover-lift">
-                        <h3 class="text-reveal" data-translate="technology-title">Technology & Real-Time Tracking</h3>
-                        <p class="fade-in-delay-1" data-translate="technology-desc">We integrate modern tracking systems that provide clients with real-time visibility of their shipments. From departure to arrival, clients can monitor vessel schedules, container status, and delivery timelines with ease. This transparency helps businesses plan better and maintain complete control over their supply chains.</p>
+                    <div class="value-card bounce-in-up stagger-5">
+                        <i class="fas fa-satellite-dish"></i>
+                        <h4 data-translate="technology-title">Real-Time Tracking</h4>
+                        <p data-translate="technology-desc">Advanced tracking systems providing complete visibility of your shipment from departure to arrival.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Why Ocean Freight Section - Below Main Content -->
-            <div class="why-ocean-freight-container fade-in-up">
-                <div class="why-ocean-freight-content">
-                    <div class="why-ocean-freight-text slide-in-left">
-                        <h2 class="fade-in-up" data-translate="why-ocean-title">Why Choose Japan Resource Group for Ocean Transportation?</h2>
-                        
-                        <div class="why-choose-list fade-in-delay-1">
-                            <ul class="fade-in-delay-2">
-                                <li class="fade-in-delay-3" data-translate="why-ocean-1">Flexible FCL and LCL solutions tailored to shipment size</li>
-                                <li class="fade-in-delay-4" data-translate="why-ocean-2">Strong partnerships with major global shipping lines</li>
-                                <li class="fade-in-delay-5" data-translate="why-ocean-3">Competitive freight rates with consistent sailing schedules</li>
-                                <li class="fade-in-delay-6" data-translate="why-ocean-4">Complete documentation, customs, and compliance support</li>
-                                <li class="fade-in-delay-7" data-translate="why-ocean-5">Dedicated cargo safety, insurance, and risk management</li>
-                                <li class="fade-in-delay-8" data-translate="why-ocean-6">Technology-driven tracking and real-time visibility</li>
-                            </ul>
+            <!-- Modern Benefits Split Layout -->
+            <section class="modern-section">
+                <div class="why-us-split bounce-in-up" style="grid-template-columns: 1.2fr 0.8fr;">
+                    <div class="why-us-content" style="padding: 4rem 3rem;">
+                        <h2 class="bounce-in-left" data-translate="why-ocean-title">Why Choose Us?</h2>
+                        <div class="benefit-list">
+                            <div class="benefit-item bounce-in-right stagger-1">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-ocean-1">Flexible FCL and LCL solutions tailored to shipment size</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-2">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-ocean-2">Strong partnerships with major global shipping lines</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-3">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-ocean-3">Competitive freight rates with consistent sailing schedules</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-4">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-ocean-4">Complete documentation, customs, and compliance support</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="why-ocean-freight-image slide-in-right">
-                        <img src="images/ocean/choose.jpg" alt="Large Container Ship at Port" class="bounce-in-delay-2">
+                    <div class="why-us-image">
+                        <img src="images/ocean/choose.jpg" alt="Why Choose Ocean Transportation">
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
+    </div>
 
 
          <!-- Land Transportation Services Grid -->
@@ -241,11 +252,12 @@
         </div> 
     </div>
 
-    <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-               <img src="images/logo.png" alt="logo" width="250" height="100"/>
+            <div class="footer-section footer-brand">
+                <img src="images/logo.png" alt="logo" width="250" height="100"/>
+                <p>Japan Resource Group provides dependable logistics coordination across land and ocean transport, booking, customs support, and operational handling.</p>
+                <a href="contact.html" class="footer-cta">Get In Touch</a>
             </div>
             <div class="footer-section">
                 <h4 data-translate="contact-japan">CONTACT JAPAN RESOURCE GROUP</h4>
@@ -288,8 +300,10 @@
             <div class="footer-section">
                 <h4 data-translate="explore-japan">EXPLORE JAPAN RESOURCE GROUP</h4>
                 <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
                     <li><a href="about.html" data-translate="company-profile">Company Profile</a></li>
                     <li><a href="about.html" data-translate="about-japan">About Japan Resource Group</a></li>
+                    <li><a href="contact.html" data-translate="get-in-touch">Get In Touch</a></li>
                 </ul>
             </div>
         </div>
@@ -298,6 +312,9 @@
             <div class="social-links">
                 <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                 <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
@@ -310,123 +327,11 @@
     <script src="script.js"></script>
     <script src="language-system.js"></script>
     <script src="search.js"></script>
-    
-    <!-- Mobile Menu Override Script -->
-    <script>
-        // Override mobile menu functionality to ensure it works
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait for other scripts to load
-            setTimeout(function() {
-                const mobileToggle = document.querySelector('.mobile-menu-toggle');
-                const mobileNav = document.querySelector('.mobile-nav');
-                const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
-                
-                if (mobileToggle && mobileNav) {
-                    // Remove any existing event listeners by cloning the element
-                    const newToggle = mobileToggle.cloneNode(true);
-                    mobileToggle.parentNode.replaceChild(newToggle, mobileToggle);
-                    
-                    // Add new event listener
-                    newToggle.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        newToggle.classList.toggle('active');
-                        mobileNav.classList.toggle('active');
-                        
-                        // Animate hamburger menu
-                        const spans = newToggle.querySelectorAll('span');
-                        if (newToggle.classList.contains('active')) {
-                            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                            spans[1].style.opacity = '0';
-                            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                        } else {
-                            spans[0].style.transform = 'none';
-                            spans[1].style.opacity = '1';
-                            spans[2].style.transform = 'none';
-                        }
-                    });
-                    
-                    // Handle mobile dropdown toggles
-                    mobileDropdownToggles.forEach(toggle => {
-                        toggle.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            const dropdown = toggle.closest('.mobile-dropdown');
-                            dropdown.classList.toggle('active');
-                        });
-                    });
-                    
-                    // Handle mobile dropdown toggles
-                    mobileDropdownToggles.forEach(toggle => {
-                        toggle.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            const dropdown = toggle.closest('.mobile-dropdown');
-                            dropdown.classList.toggle('active');
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on dropdown menu items
-                    const mobileDropdownItems = document.querySelectorAll('.mobile-dropdown-menu .mobile-nav-link');
-                    mobileDropdownItems.forEach(item => {
-                        item.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on a link (but not dropdown toggles)
-                    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link:not(.mobile-dropdown-toggle)');
-                    mobileNavLinks.forEach(link => {
-                        link.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking outside
-                    document.addEventListener('click', (e) => {
-                        if (mobileNav && newToggle && mobileNav.classList.contains('active')) {
-                            if (!mobileNav.contains(e.target) && !newToggle.contains(e.target)) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        }
-                    });
-                }
-            }, 1000);
-        });
-    </script>
-    
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-    
+
     <script src="script.js"></script>
     <script src="language-system.js"></script>
+    <script src="search.js"></script>
     <script src="scroll-to-top.js"></script>
+    
 </body>
 </html>

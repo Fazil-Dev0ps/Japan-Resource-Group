@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
     document.documentElement.style.scrollBehavior = 'smooth';
     
     // Slider is now handled by slider.js
-    initializeProfessionalAnimations();
+    // initializeProfessionalAnimations();
     initializeMobileMenu();
     initializeScrollEffects();
-    initializeScrollProgress();
-    initializeAboutPageAnimations();
-    initializeOceanTransportationAnimations();
+    // initializeScrollProgress();
+    // initializeAboutPageAnimations();
+    // initializeOceanTransportationAnimations();
     initializeContactForm();
     initializeHoverEffects();
 });
@@ -20,42 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
 // Professional Animation System - Optimized
 function initializeProfessionalAnimations() {
     const observerOptions = {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
     };
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Check for stagger delay
                 const staggerClass = entry.target.className.match(/stagger-\d+/);
-                const delay = staggerClass ? parseInt(staggerClass[0].split('-')[1]) * 100 : 0;
+                const delay = staggerClass ? parseInt(staggerClass[0].split('-')[1], 10) * 70 : 0;
                 
                 const animateElement = () => {
-                    // Check if it's a bounce element
-                    const isBounceElement = entry.target.className.match(/bounce-/);
-                    
-                    if (isBounceElement) {
-                        const bounceType = entry.target.className.match(/bounce-\w+/);
-                        if (bounceType) {
-                            const animationMap = {
-                                'bounce-in-up': 'bounceInUp 0.8s ease-out forwards',
-                                'bounce-in-left': 'bounceInLeft 0.8s ease-out forwards',
-                                'bounce-in-right': 'bounceInRight 0.8s ease-out forwards',
-                                'bounce-in-down': 'bounceInDown 0.8s ease-out forwards',
-                                'bounce-scale': 'bounceScale 1s ease-out forwards',
-                                'bounce-elastic': 'bounceElastic 1s ease-out forwards',
-                                'bounce-in': 'bounceIn 0.6s ease-out forwards'
-                            };
-                            
-                            const animation = animationMap[bounceType[0]];
-                            if (animation) {
-                                entry.target.style.animation = animation;
-                            }
-                        }
-                    } else {
-                        entry.target.classList.add('animate-scroll');
-                    }
+                    entry.target.classList.add('animate-scroll');
                 };
                 
                 if (delay > 0) {
@@ -70,9 +46,8 @@ function initializeProfessionalAnimations() {
         });
     }, observerOptions);
     
-    // Observe all animated elements - reduced selector list
     const animatedElements = document.querySelectorAll(
-        '.animate-on-scroll, .fade-in-up, .fade-in-down, .fade-in-left, .fade-in-right, .section-reveal, .card-reveal, .text-reveal, .bounce-in-left, .bounce-in-right, .bounce-in-up, .bounce-in-down, .bounce-scale, .bounce-elastic, .service-card, .department-column, .content-section, .company-section'
+        '.animate-on-scroll, .fade-in-up, .fade-in-down, .fade-in-left, .fade-in-right, .section-reveal, .card-reveal, .text-reveal, .slide-in-left, .slide-in-right, .service-card, .department-column, .content-section, .company-section, .shipping-logo'
     );
     
     animatedElements.forEach(el => {
@@ -82,7 +57,6 @@ function initializeProfessionalAnimations() {
 
 // Initialize hover effects - simplified
 function initializeHoverEffects() {
-    // Add hover classes to interactive elements
     const serviceCards = document.querySelectorAll('.service-card');
     serviceCards.forEach(card => {
         card.classList.add('hover-lift');
@@ -175,13 +149,9 @@ function initializeScrollEffects() {
     function updateScrollEffects() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-        // Header hide/show on scroll - simplified
         if (header) {
-            if (scrollTop > lastScrollTop && scrollTop > 100) {
-                header.style.transform = 'translateY(-100%)';
-            } else {
-                header.style.transform = 'translateY(0)';
-            }
+            header.classList.toggle('is-compact', scrollTop > 24);
+            header.style.transform = 'translateY(0)';
         }
         
         lastScrollTop = scrollTop;
@@ -209,17 +179,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 block: 'start'
             });
         }
-    });
-});
-
-// Add hover effects to service cards - simplified
-document.querySelectorAll('.service-card').forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-5px)';
-    });
-    
-    card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
     });
 });
 

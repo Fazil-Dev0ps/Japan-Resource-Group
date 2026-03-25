@@ -8,48 +8,46 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="homepage">
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
     
     <header class="header-above">
-        <div class="slide-in-right">
-         <ul class="nav-list">
-             <li><a href="javascript:void(0)">
-                 <i class="fas fa-search"></i>
-             </a></li>
+       <div class="slide-in-right">
+        <ul class="nav-list">
+            <li><a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>booking@japanresourcegroup.com</span>
+            </a></li>
+            <li><a href="#" class="search-toggle"><i class="fas fa-search"></i></a></li>
+            <li class="language-select">
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+                <option value="ko">한국어</option>
+            </select>
+        </li>
+        <li><a href="contact.html">
+            <i class="fas fa-phone-alt"></i>
+            <span data-translate="get-in-touch">Get In Touch</span>
+        </a></li>
       
-         <li class="language-select">
-             <select id="language-select" onchange="changeLanguage(this.value)">
-                 <option value="en">English</option>
-                 <option value="ja">日本語</option>
-                 <option value="zh">中文</option>
-                 <option value="ko">한국어</option>
-             </select>
-         </li>
-         <li><a href="contact.html">
-             <i class="fas fa-phone-alt"></i>
-             <span data-translate="get-in-touch">Get In Touch</span>
-         </a></li>
-       
-         </ul>
-        </div>
+        </ul>
+       </div>
     </header>
-    
     <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="logo">
-                </a>
+                <img src="images/logo.png" alt="logo">
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" data-translate="about-us">About Us</a></li>
                     <li class="dropdown">
-                        <a href="#services" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                        <a href="#services" class="dropdown-toggle" data-translate="services">Services <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="ocean_transportation.html">Ocean Transportation</a></li>
                             <li><a href="supply_chain_management.html">Supply Chain Management</a></li>
@@ -58,10 +56,12 @@
                             <li><a href="custom_clearance.html">Custom Clearance</a></li>
                         </ul>
                     </li>
+                   
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="contact.html" class="contact-btn">Contact Us</a>
+               <a href="contact.html" class="header-cta-btn"><i class="fas fa-globe"></i><span>Global Network</span></a>
             </div>
             <div class="mobile-menu-toggle">
                 <span></span>
@@ -85,16 +85,15 @@
                         <li><a href="custom_clearance.html" class="mobile-nav-link">Custom Clearance</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                
+                <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Banner -->
-    <section class="ocean-banner bounce-in-up">
-        <div class="banner-overlay">
-            <h1 class="text-reveal bounce-elastic">CONTACT US</h1>
-        </div>
+    <section class="ocean-banner">
+    
     </section>
 
     <!-- Contact Content -->
@@ -230,61 +229,69 @@
     </div>
 
     <!-- Footer -->
-    <footer id="contact" class="footer fade-in-up">
+    <footer id="contact" class="footer">
         <div class="footer-content">
-            <div class="footer-section fade-in-up stagger-1">
-               <img src="images/logo.png" alt="logo" width="250" height="100" class="scale-in-bounce"/>
+            <div class="footer-section footer-brand">
+                <img src="images/logo.png" alt="logo" width="250" height="100"/>
+                <p>Japan Resource Group provides dependable logistics coordination across land and ocean transport, booking, customs support, and operational handling.</p>
+                <a href="contact.html" class="footer-cta">Get In Touch</a>
             </div>
             <div class="footer-section">
-                <h4>CONTACT JAPAN RESOURCE GROUP</h4>
+                <h4 data-translate="contact-japan">CONTACT JAPAN RESOURCE GROUP</h4>
                 
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div class="contact-details">
-                            <a href="https://wa.me/818077048929" target="_blank" class="whatsapp-link">
+                            <a href="https://wa.me/818077048929" target="_blank" class="whatsapp-link" data-translate="footer-phone-1">
                                 <i class="fab fa-whatsapp"></i> +81 80-7704-8929
                             </a>
-                            <p>+81 75-754-6036</p>
-                            <p>+81 75-754-6211</p>
+                            <p data-translate="footer-phone-2">+81 75-754-6036</p>
+                            <p data-translate="footer-phone-3">+81 75-754-6211</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-globe"></i>
-                        <a href="https://www.japanresourcegroup.com" target="_blank">www.japanresourcegroup.com</a>
+                        <a href="https://www.japanresourcegroup.com" target="_blank" data-translate="footer-website">www.japanresourcegroup.com</a>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <a href="mailto:booking@japanresourcegroup.com">booking@japanresourcegroup.com</a>
+                        <a href="mailto:booking@japanresourcegroup.com" data-translate="footer-email">booking@japanresourcegroup.com</a>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>613-0901, Kyoto Shi, Fushimi-Ku Yodohizumecho 229</span>
+                        <span data-translate="footer-address">613-0901, Kyoto Shi, Fushimi-Ku Yodohizumecho 229</span>
                     </div>
                 </div>
             </div>
             <div class="footer-section">
-                <h4>JAPAN RESOURCE GROUP SERVICES</h4>
+                <h4 data-translate="japan-services">JAPAN RESOURCE GROUP SERVICES</h4>
                 <ul>
-                    <li><a href="ocean_transportation.html">Ocean Transportation</a></li>
-                    <li><a href="supply_chain_management.html">Supply Chain Management</a></li>
-                    <li><a href="land_transportation.html">Land Transportation</a></li>
-                    <li><a href="yard_services.html">Yard Services</a></li>
-                    <li><a href="custom_clearance.html">Custom Clearance</a></li>
+                    <li><a href="ocean_transportation.html" data-translate="ocean_transportation">Ocean Transportation</a></li>
+                    <li><a href="supply_chain_management.html" data-translate="supply_chain_management">Supply Chain Management</a></li>
+                    <li><a href="land_transportation.html" data-translate="land_transportation">Land Transportation</a></li>
+                    <li><a href="yard_services.html" data-translate="yard_services">Yard Services</a></li>
+                    <li><a href="custom_clearance.html" data-translate="custom_clearance">Custom Clearance</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>EXPLORE JAPAN RESOURCE GROUP</h4>
+                <h4 data-translate="explore-japan">EXPLORE JAPAN RESOURCE GROUP</h4>
                 <ul>
-                    <li><a href="about.html">Company Profile</a></li>
-                    <li><a href="about.html">About Japan Resource Group</a></li>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" data-translate="company-profile">Company Profile</a></li>
+                    <li><a href="about.html" data-translate="about-japan">About Japan Resource Group</a></li>
+                    <li><a href="contact.html" data-translate="get-in-touch">Get In Touch</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Japan Resource Group. All rights reserved.</p>
+            <p><span data-translate="footer-copyright">&copy; 2025 Japan Resource Group.</span> <span data-translate="rights-reserved">All rights reserved.</span></p>
             <div class="social-links">
+                <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                 <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
@@ -294,9 +301,7 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <script src="script.js"></script>
-    <script src="language-system.js"></script>
-    <script src="search.js"></script>
+
     
     <!-- Simple Email Functionality Script -->
     <script>
@@ -364,106 +369,6 @@ ${formData.message}`;
         });
     </script>
     
-    <!-- Mobile Menu Override Script -->
-    <script>
-        // Override mobile menu functionality to ensure it works
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait for other scripts to load
-            setTimeout(function() {
-                const mobileToggle = document.querySelector('.mobile-menu-toggle');
-                const mobileNav = document.querySelector('.mobile-nav');
-                const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
-                
-                if (mobileToggle && mobileNav) {
-                    // Remove any existing event listeners by cloning the element
-                    const newToggle = mobileToggle.cloneNode(true);
-                    mobileToggle.parentNode.replaceChild(newToggle, mobileToggle);
-                    
-                    // Add new event listener
-                    newToggle.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        newToggle.classList.toggle('active');
-                        mobileNav.classList.toggle('active');
-                        
-                        // Animate hamburger menu
-                        const spans = newToggle.querySelectorAll('span');
-                        if (newToggle.classList.contains('active')) {
-                            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                            spans[1].style.opacity = '0';
-                            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                        } else {
-                            spans[0].style.transform = 'none';
-                            spans[1].style.opacity = '1';
-                            spans[2].style.transform = 'none';
-                        }
-                    });
-                    
-                    // Handle mobile dropdown toggles
-                    mobileDropdownToggles.forEach(toggle => {
-                        toggle.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            const dropdown = toggle.closest('.mobile-dropdown');
-                            dropdown.classList.toggle('active');
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on dropdown menu items
-                    const mobileDropdownItems = document.querySelectorAll('.mobile-dropdown-menu .mobile-nav-link');
-                    mobileDropdownItems.forEach(item => {
-                        item.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on a link (but not dropdown toggles)
-                    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link:not(.mobile-dropdown-toggle)');
-                    mobileNavLinks.forEach(link => {
-                        link.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking outside
-                    document.addEventListener('click', (e) => {
-                        if (mobileNav && newToggle && mobileNav.classList.contains('active')) {
-                            if (!mobileNav.contains(e.target) && !newToggle.contains(e.target)) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        }
-                    });
-                }
-            }, 1000);
-        });
-    </script>
-    
     <!-- Scroll to Top Button -->
     <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
         <i class="fas fa-chevron-up"></i>
@@ -471,6 +376,7 @@ ${formData.message}`;
     
     <script src="script.js"></script>
     <script src="language-system.js"></script>
+    <script src="search.js"></script>
     <script src="scroll-to-top.js"></script>
 </body>
 </html>

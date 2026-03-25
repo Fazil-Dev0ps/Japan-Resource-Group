@@ -3,53 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supply Chain Management - Japan Resource Group - Transport & Trade Service Provider</title>
+    <title>Land Transportation - Japan Resource Group - Transport & Trade Service Provider</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="homepage">
     <!-- Scroll Progress Bar -->
-   
+    <div class="scroll-progress"></div>
     
     <header class="header-above">
-        <div class="slide-in-right">
-         <ul class="nav-list">
-             <li><a href="javascript:void(0)">
-                 <i class="fas fa-search"></i>
-             </a></li>
+       <div class="slide-in-right">
+        <ul class="nav-list">
+            <li><a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>booking@japanresourcegroup.com</span>
+            </a></li>
+            <li><a href="#" class="search-toggle"><i class="fas fa-search"></i></a></li>
+            <li class="language-select">
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+                <option value="ko">한국어</option>
+            </select>
+        </li>
+        <li><a href="contact.html">
+            <i class="fas fa-phone-alt"></i>
+            <span data-translate="get-in-touch">Get In Touch</span>
+        </a></li>
       
-         <li class="language-select">
-             <select id="language-select" onchange="changeLanguage(this.value)">
-                 <option value="en">English</option>
-                 <option value="ja">日本語</option>
-                 <option value="zh">中文</option>
-                 <option value="ko">한국어</option>
-             </select>
-         </li>
-         <li><a href="contact.html">
-             <i class="fas fa-phone-alt"></i>
-             <span data-translate="get-in-touch">Get In Touch</span>
-         </a></li>
-       
-         </ul>
-        </div>
-     </header>
-    
+        </ul>
+       </div>
+    </header>
     <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="logo">
-                </a>
+                <img src="images/logo.png" alt="logo">
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" data-translate="about-us">About Us</a></li>
                     <li class="dropdown">
-                        <a href="#services" class="dropdown-toggle active">Services <i class="fas fa-chevron-down"></i></a>
+                        <a href="#services" class="dropdown-toggle active" data-translate="services">Services <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="ocean_transportation.html">Ocean Transportation</a></li>
                             <li><a href="supply_chain_management.html">Supply Chain Management</a></li>
@@ -58,12 +56,13 @@
                             <li><a href="custom_clearance.html">Custom Clearance</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                    
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <i class="fas fa-globe"></i> <a href="contact.html" class="">Global Network</a>
-             </div>
+               <a href="contact.html" class="header-cta-btn"><i class="fas fa-globe"></i><span>Global Network</span></a>
+            </div>
             <div class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -76,185 +75,123 @@
             <ul class="mobile-nav-list">
                 <li><a href="index.html" class="mobile-nav-link">Home</a></li>
                 <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
-                <li class="mobile-dropdown">
+                <li class="mobile-dropdown active">
                     <a href="#services" class="mobile-nav-link mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
                     <ul class="mobile-dropdown-menu">
                         <li><a href="ocean_transportation.html" class="mobile-nav-link">Ocean Transportation</a></li>
                         <li><a href="supply_chain_management.html" class="mobile-nav-link">Supply Chain Management</a></li>
-                        <li><a href="land_transportation.html" class="mobile-nav-link">Land Transportation</a></li>
+                        <li><a href="land_transportation.html" class="mobile-nav-link active">Land Transportation</a></li>
                         <li><a href="yard_services.html" class="mobile-nav-link">Yard Services</a></li>
                         <li><a href="custom_clearance.html" class="mobile-nav-link">Custom Clearance</a></li>
                     </ul>
                 </li>
+               
                 <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Banner -->
-    <section class="land-banner bounce-in-up">
-        <div class="banner-overlay">
-            <h1 class="text-reveal bounce-elastic" data-translate="land-title">Land Transportation</h1>
-        </div>
+    <section class="land-banner">
+    
     </section>
 
     <!-- Ocean Transportation Content -->
     <div class="ocean-container">
         <div class="ocean-main-content">
-            <!-- Introduction Section -->
-            <!-- <div class="intro-section fade-in-up">
-                <div class="intro-banner">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Supply Chain Management">
-                    <div class="intro-content">
-                        <h2 class="fade-in-up">Japan Resource Group | Supply Chain Management</h2>
-                        <p class="fade-in-delay-1">Optimizing Your Supply Chain. At Japan Resource Group, we understand that a strong supply chain is the backbone of any successful business. Our supply chain management solutions are designed to streamline every step — from procurement and warehousing to transportation and final delivery. By combining advanced technology, industry expertise, and a dedicated team, we create end-to-end solutions that save costs, improve efficiency, and give businesses a competitive edge.</p>
-                        <h3 class="fade-in-delay-2">WHY CHOOSE US!</h3>
+            <!-- Modern Intro Split Section -->
+            <section class="modern-section">
+                <div class="why-us-split bounce-in-up">
+                    <div class="why-us-image">
+                        <img src="images/land/cover.jpg" alt="Land Transportation">
+                    </div>
+                    <div class="why-us-content">
+                        <h2 class="bounce-in-left" data-translate="land-intro-title">RELIABLE ROAD FREIGHT SOLUTIONS</h2>
+                        <h3 class="bounce-in-up stagger-1" style="color: var(--primary-red); margin-bottom: 1.5rem;">Efficient Nationwide Logistics</h3>
+                        <p class="bounce-in-up stagger-2" data-translate="land-intro">At Japan Resource Group, our land transportation network is the backbone of domestic and cross-border logistics. We specialize in moving goods across Japan with precision, speed, and safety. Our modern fleet of trucks, trailers, and specialized vehicles allows us to handle a wide range of cargo — from small shipments to oversized loads.</p>
+                        <a href="contact.html" class="download-btn bounce-in-up stagger-3" style="text-decoration: none;"><i class="fas fa-truck"></i> Get a Quote</a>
                     </div>
                 </div>
-            </div> -->
+            </section>
 
-            <!-- Main Content Grid -->
-            <div class="ocean-content-grid">
-                <!-- Left Column - Text Content -->
-                <div class="ocean-text-content bounce-in-left">
-                    <!-- <h2 class="bounce-scale">Land Transportation</h2> -->
-                    
-                    <div class="content-section bounce-in-up stagger-1 hover-lift">
-                        <h3 class="bounce-scale" data-translate="land-intro-title">Reliable Road Freight Solutions</h3>
-                        <p class="fade-in-delay-1" data-translate="land-intro">At Japan Resource Group, our land transportation network is the backbone of domestic and cross-border logistics. We specialize in moving goods across Japan with precision, speed, and safety. Our modern fleet of trucks, trailers, and specialized vehicles allows us to handle a wide range of cargo — from small shipments to oversized loads. Whether it's same-day delivery within a city or long-haul transport across prefectures, we deliver excellence every time. With advanced GPS tracking and real-time updates, our clients enjoy complete visibility and control over their cargo at every step of the journey.</p>
+            <!-- Modern Capabilities Grid -->
+            <section class="modern-section">
+                <h2 class="section-title-center" data-translate="core-capabilities">Our Core Capabilities</h2>
+                <div class="values-grid">
+                    <div class="value-card bounce-in-up stagger-1">
+                        <i class="fas fa-truck"></i>
+                        <h4 data-translate="fleet-comprehensive-title">Comprehensive Fleet</h4>
+                        <p data-translate="fleet-comprehensive-desc">Diverse vehicles from container trucks to refrigerated units, ensuring every shipment is handled with the right equipment.</p>
                     </div>
-
-                    <div class="content-section bounce-in-up stagger-2 hover-lift">
-                        <h3 class="bounce-scale" data-translate="fleet-comprehensive-title">Comprehensive Fleet for Every Need</h3>
-                        <p class="bounce-elastic stagger-3" data-translate="fleet-comprehensive-desc">We maintain a diverse fleet of vehicles designed to meet specific transportation requirements. From container trucks and refrigerated vehicles for temperature-sensitive goods to heavy-duty carriers for industrial cargo, Japan Resource Group ensures that every type of shipment is handled with the right equipment. Regular maintenance, strict safety checks, and eco-friendly practices make our fleet both reliable and sustainable.</p>
+                    <div class="value-card bounce-in-up stagger-2">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h4 data-translate="nationwide-coverage-title">Nationwide Coverage</h4>
+                        <p data-translate="nationwide-coverage-desc">Extensive road network connecting major industrial hubs, ports, and distribution centers across Japan.</p>
                     </div>
-
-                    <div class="content-section bounce-in-up stagger-3 hover-lift">
-                        <h3 class="bounce-scale" data-translate="nationwide-coverage-title">Nationwide Coverage</h3>
-                        <p class="bounce-elastic stagger-4" data-translate="nationwide-coverage-desc">Our extensive road network connects all major industrial hubs, ports, and distribution centers across Japan. By covering urban as well as remote areas, we ensure timely delivery to every destination. Our strategically placed hubs and partners allow us to optimize routes, reduce transit times, and guarantee punctual deliveries, no matter the distance.</p>
+                    <div class="value-card bounce-in-up stagger-3">
+                        <i class="fas fa-tools"></i>
+                        <h4 data-translate="customized-solutions-title">Tailor-Made Solutions</h4>
+                        <p data-translate="customized-solutions-desc">Flexible options including dedicated trucks and scheduled deliveries to match your specific supply chain needs.</p>
                     </div>
-
-                    <div class="content-section fade-in-up stagger-4 hover-lift">
-                        <h3 class="text-reveal" data-translate="customized-solutions-title">Customized Transport Solutions</h3>
-                        <p class="fade-in-delay-1" data-translate="customized-solutions-desc">We understand that no two businesses are the same. That's why Japan Resource Group offers tailor-made solutions to match your supply chain needs. Whether you need dedicated trucks, scheduled deliveries, or express services, our flexible options give you the freedom to choose what works best for your business.</p>
+                    <div class="value-card bounce-in-up stagger-4">
+                        <i class="fas fa-lock"></i>
+                        <h4 data-translate="safety-security-title">Safety & Security</h4>
+                        <p data-translate="safety-security-desc">Strict compliance standards, secure handling procedures, and monitored routes for complete cargo protection.</p>
                     </div>
-
-                    <div class="content-section fade-in-up stagger-5 hover-lift">
-                        <h3 class="text-reveal" data-translate="safety-security-title">Safety & Security First</h3>
-                        <p class="fade-in-delay-1" data-translate="safety-security-desc">Cargo safety is our top priority. Our drivers are trained in secure handling procedures and strictly follow compliance standards. We use advanced locking systems, monitored routes, and 24/7 tracking to safeguard goods during transit. Insurance options are also available for added protection and peace of mind.</p>
-                    </div>
-
-                    <div class="content-section fade-in-up stagger-6 hover-lift">
-                        <h3 class="text-reveal" data-translate="technology-logistics-title">Technology-Driven Logistics</h3>
-                        <p class="fade-in-delay-1" data-translate="technology-logistics-desc">Efficiency comes from innovation. By integrating smart logistics systems, we offer digital tracking, route optimization, and electronic proof of delivery. These technologies reduce paperwork, minimize errors, and provide transparency throughout the transportation process.</p>
+                    <div class="value-card bounce-in-up stagger-5">
+                        <i class="fas fa-microchip"></i>
+                        <h4 data-translate="technology-logistics-title">Smart Logistics</h4>
+                        <p data-translate="technology-logistics-desc">Advanced GPS tracking, route optimization, and digital transparency throughout the transportation process.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Why Choose Us Section - Below Main Content -->
-            <div class="why-ocean-freight-container section-reveal">
-                <div class="why-ocean-freight-content">
-                    <div class="why-ocean-freight-text slide-in-left">
-                        <h2 class="text-reveal" data-translate="why-land-title">Why Choose Japan Resource Group for Land Transportation?</h2>
-                        
-                        <div class="why-choose-list fade-in-up stagger-1">
-                            <ul class="fade-in-up stagger-2">
-                                <li class="fade-in-up stagger-3 hover-lift" data-translate="why-land-1">Modern, well-maintained fleet of trucks and trailers</li>
-                                <li class="fade-in-up stagger-4 hover-lift" data-translate="why-land-2">Nationwide network with urban and remote area coverage</li>
-                                <li class="fade-in-up stagger-5 hover-lift" data-translate="why-land-3">Customized solutions for different industries</li>
-                                <li class="fade-in-up stagger-6 hover-lift" data-translate="why-land-4">Advanced GPS tracking and real-time shipment updates</li>
-                                <li class="fade-in-up stagger-7 hover-lift" data-translate="why-land-5">Strict safety standards and reliable insurance support</li>
-                                <li class="fade-in-up stagger-8 hover-lift" data-translate="why-land-6">Eco-friendly practices for sustainable logistics</li>
-                            </ul>
+            <!-- Modern Benefits Split Layout -->
+            <section class="modern-section">
+                <div class="why-us-split bounce-in-up" style="grid-template-columns: 1.2fr 0.8fr;">
+                    <div class="why-us-content" style="padding: 4rem 3rem;">
+                        <h2 class="bounce-in-left" data-translate="why-land-title">Why Choose Us?</h2>
+                        <div class="benefit-list">
+                            <div class="benefit-item bounce-in-right stagger-1">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-land-1">Modern, well-maintained fleet of trucks and trailers</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-2">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-land-2">Nationwide network with urban and remote area coverage</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-3">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-land-3">Customized solutions for different industries</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-4">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="why-land-4">Advanced GPS tracking and real-time shipment updates</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="why-ocean-freight-image slide-in-right">
-                        <img src="images/land/cover.jpg" alt="Land Transportation" class="scale-in-bounce hover-lift">
+                    <div class="why-us-image">
+                        <img src="images/land/cover.jpg" alt="Why Choose Land Transportation">
                     </div>
                 </div>
-            </div>
-        </div>
-
-         <!-- Land Transportation Services Grid -->
-         <!-- <div class="land-transport-services fade-in-up"> -->
-            <!-- <div class="services-header"> -->
-                <!-- <h2 class="fade-in-up" data-translate="more-services-title">MORE SERVICES IN LAND TRANSPORTATION</h2> -->
-                <!-- <p class="fade-in-delay-1" data-translate="more-services-desc">Japan Resource Group's scope of services includes Container Vanning service, Car Export Service, Vehicle Pre-Export Inspection.</p> -->
-            <!-- </div> -->
-            
-            <!-- <div class="services-grid"> -->
-                <!-- First Row - Realistic Photos -->
-                <!-- <div class="service-card slide-in-left"> -->
-                    <!-- <h3 class="fade-in-up">CONTAINER VANNING SERVICES</h3> -->
-                   
-                <!-- </div> -->
-                
-                <!-- <div class="service-card fade-in-up"> -->
-                    <!-- <h3 class="fade-in-up">CAR EXPORT</h3> -->
-                   
-                <!-- </div> -->
-                
-                <!-- <div class="service-card slide-in-right"> -->
-                    <!-- <h3 class="fade-in-up">VEHICLE EXPORT INSPECTION</h3> -->
-                   
-                <!-- </div> -->
-            <!-- </div> -->
-            
-            <!-- More Services Section -->
-            <!-- <div class="more-services-section fade-in-up">
-                <h2 class="fade-in-up" data-translate="integrated-solutions-title">More Integrated Solutions from Japan Resource Group</h2>
-                <p class="fade-in-delay-1" data-translate="integrated-solutions-subtitle">JAPAN RESOURCE GROUP ALSO PROVIDES COMPLETE SERVICES ON THE FOLLOWING DOMAINS.</p>
-            </div> -->
-
-            <!-- <div class="content-section fade-in-up">
-                <h3 class="fade-in-up" data-translate="efficient-secure-title">Efficient & Secure Land Transport, Powered by Japan Resource Group</h3>
-                <p class="fade-in-delay-1" data-translate="efficient-secure-desc">Japan Resource Group ensures smooth and reliable land transportation solutions designed to meet diverse
-                    customer needs. From dedicated carrier vehicles to containerized transport, we guarantee safe handling,
-                    timely delivery, and cost-effective operations. With years of experience in the logistics industry, our specialized
-                    land transport services provide efficiency, flexibility, and complete peace of mind for our clients.</p>
-            </div> -->
-            
-            <!-- -- <div class="services-grid"> -->
-                <!-- Second Row - Stylized Photos with Overlays -->
-                <!-- <div class="service-card-overlay slide-in-left"> -->
-                    <!-- <div class="service-image-overlay"> -->
-                        <!-- <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Container Vanning Service" class="bounce-in-delay-1"> -->
-                        <!-- <div class="overlay-content"> -->
-                            <!-- <i class="fas fa-shipping-fast overlay-icon"></i> -->
-                            <!-- <h4>CONTAINER VANNING SERVICE</h4> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-                
-                <!-- <div class="service-card-overlay fade-in-up"> -->
-                    <!-- <div class="service-image-overlay"> -->
-                        <!-- <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Car Export Service" class="bounce-in-delay-2"> -->
-                        <!-- <div class="overlay-content"> -->
-                            <!-- <i class="fas fa-car overlay-icon"></i> -->
-                            <!-- <h4>CAR EXPORT SERVICE</h4> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-                
-                <!-- <div class="service-card-overlay slide-in-right"> -->
-                    <!-- <div class="service-image-overlay"> -->
-                        <!-- <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Vehicle Export Inspection" class="bounce-in-delay-3"> -->
-                        <!-- <div class="overlay-content"> -->
-                            <!-- <i class="fas fa-clipboard-check overlay-icon"></i> -->
-                            <!-- <h4>VEHICLE EXPORT INSPECTION</h4> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-            <!-- </div>  -->
+            </section>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-               <img src="images/logo.png" alt="logo" width="250" height="100"/>
+            <div class="footer-section footer-brand">
+                <img src="images/logo.png" alt="logo" width="250" height="100"/>
+                <p>Japan Resource Group provides dependable logistics coordination across land and ocean transport, booking, customs support, and operational handling.</p>
+                <a href="contact.html" class="footer-cta">Get In Touch</a>
             </div>
             <div class="footer-section">
                 <h4 data-translate="contact-japan">CONTACT JAPAN RESOURCE GROUP</h4>
@@ -297,8 +234,10 @@
             <div class="footer-section">
                 <h4 data-translate="explore-japan">EXPLORE JAPAN RESOURCE GROUP</h4>
                 <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
                     <li><a href="about.html" data-translate="company-profile">Company Profile</a></li>
                     <li><a href="about.html" data-translate="about-japan">About Japan Resource Group</a></li>
+                    <li><a href="contact.html" data-translate="get-in-touch">Get In Touch</a></li>
                 </ul>
             </div>
         </div>
@@ -307,6 +246,9 @@
             <div class="social-links">
                 <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                 <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
@@ -315,118 +257,10 @@
     <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
         <i class="fas fa-chevron-up"></i>
     </button>
-
+ 
     <script src="script.js"></script>
     <script src="language-system.js"></script>
     <script src="search.js"></script>
-    
-    <!-- Mobile Menu Override Script -->
-    <script>
-        // Override mobile menu functionality to ensure it works
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait for other scripts to load
-            setTimeout(function() {
-                const mobileToggle = document.querySelector('.mobile-menu-toggle');
-                const mobileNav = document.querySelector('.mobile-nav');
-                const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
-                
-                if (mobileToggle && mobileNav) {
-                    // Remove any existing event listeners by cloning the element
-                    const newToggle = mobileToggle.cloneNode(true);
-                    mobileToggle.parentNode.replaceChild(newToggle, mobileToggle);
-                    
-                    // Add new event listener
-                    newToggle.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        newToggle.classList.toggle('active');
-                        mobileNav.classList.toggle('active');
-                        
-                        // Animate hamburger menu
-                        const spans = newToggle.querySelectorAll('span');
-                        if (newToggle.classList.contains('active')) {
-                            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                            spans[1].style.opacity = '0';
-                            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                        } else {
-                            spans[0].style.transform = 'none';
-                            spans[1].style.opacity = '1';
-                            spans[2].style.transform = 'none';
-                        }
-                    });
-                    
-                    // Handle mobile dropdown toggles
-                    mobileDropdownToggles.forEach(toggle => {
-                        toggle.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            const dropdown = toggle.closest('.mobile-dropdown');
-                            dropdown.classList.toggle('active');
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on dropdown menu items
-                    const mobileDropdownItems = document.querySelectorAll('.mobile-dropdown-menu .mobile-nav-link');
-                    mobileDropdownItems.forEach(item => {
-                        item.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on a link (but not dropdown toggles)
-                    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link:not(.mobile-dropdown-toggle)');
-                    mobileNavLinks.forEach(link => {
-                        link.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking outside
-                    document.addEventListener('click', (e) => {
-                        if (mobileNav && newToggle && mobileNav.classList.contains('active')) {
-                            if (!mobileNav.contains(e.target) && !newToggle.contains(e.target)) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        }
-                    });
-                }
-            }, 1000);
-        });
-    </script>
-    
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-    
-    <script src="script.js"></script>
-    <script src="language-system.js"></script>
     <script src="scroll-to-top.js"></script>
 </body>
 </html>

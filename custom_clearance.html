@@ -8,48 +8,46 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="homepage">
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress"></div>
     
     <header class="header-above">
-        <div class="slide-in-right">
-         <ul class="nav-list">
-             <li><a href="javascript:void(0)">
-                 <i class="fas fa-search"></i>
-             </a></li>
+       <div class="slide-in-right">
+        <ul class="nav-list">
+            <li><a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>booking@japanresourcegroup.com</span>
+            </a></li>
+            <li><a href="#" class="search-toggle"><i class="fas fa-search"></i></a></li>
+            <li class="language-select">
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+                <option value="ko">한국어</option>
+            </select>
+        </li>
+        <li><a href="contact.html">
+            <i class="fas fa-phone-alt"></i>
+            <span data-translate="get-in-touch">Get In Touch</span>
+        </a></li>
       
-         <li class="language-select">
-             <select id="language-select" onchange="changeLanguage(this.value)">
-                 <option value="en">English</option>
-                 <option value="ja">日本語</option>
-                 <option value="zh">中文</option>
-                 <option value="ko">한국어</option>
-             </select>
-         </li>
-         <li><a href="contact.html">
-             <i class="fas fa-phone-alt"></i>
-             <span data-translate="get-in-touch">Get In Touch</span>
-         </a></li>
-       
-         </ul>
-        </div>
-     </header>
-    
+        </ul>
+       </div>
+    </header>
     <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="logo">
-                </a>
+                <img src="images/logo.png" alt="logo">
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" data-translate="about-us">About Us</a></li>
                     <li class="dropdown">
-                        <a href="#services" class="dropdown-toggle active">Services <i class="fas fa-chevron-down"></i></a>
+                        <a href="#services" class="dropdown-toggle active" data-translate="services">Services <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="ocean_transportation.html">Ocean Transportation</a></li>
                             <li><a href="supply_chain_management.html">Supply Chain Management</a></li>
@@ -58,12 +56,13 @@
                             <li><a href="custom_clearance.html" class="active">Custom Clearance</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                    
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <i class="fas fa-globe"></i> <a href="contact.html" class="">Global Network</a>
-             </div>
+               <a href="contact.html" class="header-cta-btn"><i class="fas fa-globe"></i><span>Global Network</span></a>
+            </div>
             <div class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -76,160 +75,119 @@
             <ul class="mobile-nav-list">
                 <li><a href="index.html" class="mobile-nav-link">Home</a></li>
                 <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
-                <li class="mobile-dropdown">
+                <li class="mobile-dropdown active">
                     <a href="#services" class="mobile-nav-link mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
                     <ul class="mobile-dropdown-menu">
                         <li><a href="ocean_transportation.html" class="mobile-nav-link">Ocean Transportation</a></li>
                         <li><a href="supply_chain_management.html" class="mobile-nav-link">Supply Chain Management</a></li>
                         <li><a href="land_transportation.html" class="mobile-nav-link">Land Transportation</a></li>
                         <li><a href="yard_services.html" class="mobile-nav-link">Yard Services</a></li>
-                        <li><a href="custom_clearance.html" class="mobile-nav-link">Custom Clearance</a></li>
+                        <li><a href="custom_clearance.html" class="mobile-nav-link active">Custom Clearance</a></li>
                     </ul>
                 </li>
+                
                 <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Banner -->
-    <section class="custom-banner bounce-in-up">
-        <div class="banner-overlay">
-            <h1 class="text-reveal bounce-elastic" data-translate="custom-title">Custom Clearance</h1>
-        </div>
+    <section class="custom-banner">
+    
     </section>
 
     <!-- Ocean Transportation Content -->
     <div class="ocean-container">
         <div class="ocean-main-content">
-       
-
-            <!-- Main Content Grid -->
-            <div class="ocean-content-grid">
-                <!-- Left Column - Text Content -->
-                <div class="ocean-text-content bounce-in-left">
-                    <!-- <h2 class="bounce-scale">Custom Clearance</h2> -->
-                    
-                    <div class="content-section bounce-in-up stagger-1 hover-lift">
-                        <h3 class="bounce-scale" data-translate="custom-simplifying-title">Simplifying International Trade</h3>
-                        <p class="bounce-elastic stagger-2" data-translate="custom-simplifying-desc">At Japan Resource Group, we know that customs clearance is one of the most complex parts of global logistics. Delays, paperwork errors, or compliance issues can disrupt your entire supply chain. That's why our dedicated customs team ensures smooth, accurate, and efficient clearance for every shipment. With years of expertise and a deep understanding of Japan's import/export regulations, we handle the process from start to finish, giving our clients complete peace of mind.</p>
+            <!-- Modern Intro Split Section -->
+            <section class="modern-section">
+                <div class="why-us-split bounce-in-up">
+                    <div class="why-us-image">
+                        <img src="images/custom/cover1.jpg" alt="Custom Clearance">
                     </div>
-
-                    <div class="content-section fade-in-up stagger-2 hover-lift">
-                        <h3 class="text-reveal" data-translate="custom-documentation-title">Complete Documentation Support</h3>
-                        <p class="fade-in-delay-1" data-translate="custom-documentation-desc">From preparing bills of lading to import/export permits and certificates of origin, our experts manage all the essential paperwork required for customs clearance. We double-check every detail to eliminate errors, ensuring compliance with both local and international laws. With Japan Resource Group, your documents are always in safe hands.</p>
-                    </div>
-
-                    <div class="content-section fade-in-up stagger-3 hover-lift">
-                        <h3 class="text-reveal" data-translate="custom-compliance-title">Compliance & Risk Management</h3>
-                        <p class="fade-in-delay-1" data-translate="custom-compliance-desc">International trade involves strict rules and regulations. Our team keeps up-to-date with the latest customs laws, tariffs, and trade agreements to guarantee compliance. We also provide risk assessments and advice to help clients avoid unnecessary penalties, delays, or added costs.</p>
-                    </div>
-
-                    <div class="content-section fade-in-up stagger-4 hover-lift">
-                        <h3 class="text-reveal" data-translate="custom-import-export-title">Seamless Import & Export Handling</h3>
-                        <p class="fade-in-delay-1" data-translate="custom-import-export-desc">Whether you are importing raw materials into Japan or exporting finished goods to global markets, Japan Resource Group ensures a hassle-free process. We coordinate with port authorities, shipping lines, and inspection agencies to accelerate clearance and minimize waiting times.</p>
-                    </div>
-
-                    <div class="content-section fade-in-up stagger-5 hover-lift">
-                        <h3 class="text-reveal" data-translate="custom-support-title">Dedicated Customer Support</h3>
-                        <p class="fade-in-delay-1" data-translate="custom-support-desc">Our customs clearance specialists are available to answer queries, provide updates, and assist with special requirements. We believe in transparency and keep our clients informed at every step, building trust and reliability in our services.</p>
+                    <div class="why-us-content">
+                        <h2 class="bounce-in-left" data-translate="custom-simplifying-title">SIMPLIFYING INTERNATIONAL TRADE</h2>
+                        <h3 class="bounce-in-up stagger-1" style="color: var(--primary-red); margin-bottom: 1.5rem;">Expert Customs Navigation</h3>
+                        <p class="bounce-in-up stagger-2" data-translate="custom-simplifying-desc">At Japan Resource Group, we know that customs clearance is one of the most complex parts of global logistics. Delays, paperwork errors, or compliance issues can disrupt your entire supply chain. That's why our dedicated customs team ensures smooth, accurate, and efficient clearance for every shipment.</p>
+                        <a href="contact.html" class="download-btn bounce-in-up stagger-3" style="text-decoration: none;"><i class="fas fa-file-contract"></i> Consult Expert</a>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Why Choose Us Section - Below Main Content -->
-            <div class="why-ocean-freight-container fade-in-up">
-                <div class="why-ocean-freight-content">
-                    <div class="">
-                        <h2 class="fade-in-up" data-translate="custom-why-title">Why Choose Japan Resource Group for Custom Clearance?</h2>
-                        
-                        <div class="why-choose-list fade-in-delay-1">
-                            <ul class="fade-in-delay-2">
-                                <li class="fade-in-delay-3" data-translate="custom-why-1">Full documentation preparation and verification</li>
-                                <li class="fade-in-delay-4" data-translate="custom-why-2">Up-to-date compliance with trade laws and tariffs</li>
-                                <li class="fade-in-delay-5" data-translate="custom-why-3">Risk management and duty optimization strategies</li>
-                                <li class="fade-in-delay-6" data-translate="custom-why-4">Fast and reliable import/export processing</li>
-                                <li class="fade-in-delay-7" data-translate="custom-why-5">Strong coordination with port and government authorities</li>
-                                <li class="fade-in-delay-8" data-translate="custom-why-6">Dedicated support team for personalized service</li>
-                            </ul>
+            <!-- Modern Capabilities Grid -->
+            <section class="modern-section">
+                <h2 class="section-title-center" data-translate="core-capabilities">Our Core Capabilities</h2>
+                <div class="values-grid">
+                    <div class="value-card bounce-in-up stagger-1">
+                        <i class="fas fa-file-signature"></i>
+                        <h4 data-translate="custom-documentation-title">Documentation Support</h4>
+                        <p data-translate="custom-documentation-desc">Expert management of bills of lading, import/export permits, and certificates of origin for accurate processing.</p>
+                    </div>
+                    <div class="value-card bounce-in-up stagger-2">
+                        <i class="fas fa-balance-scale"></i>
+                        <h4 data-translate="custom-compliance-title">Compliance & Risk</h4>
+                        <p data-translate="custom-compliance-desc">Staying up-to-date with trade laws, tariffs, and agreements to guarantee compliance and avoid penalties.</p>
+                    </div>
+                    <div class="value-card bounce-in-up stagger-3">
+                        <i class="fas fa-exchange-alt"></i>
+                        <h4 data-translate="custom-import-export-title">Import & Export</h4>
+                        <p data-translate="custom-import-export-desc">Seamless coordination with port authorities and inspection agencies to accelerate clearance times.</p>
+                    </div>
+                    <div class="value-card bounce-in-up stagger-4">
+                        <i class="fas fa-headset"></i>
+                        <h4 data-translate="custom-support-title">Dedicated Support</h4>
+                        <p data-translate="custom-support-desc">Direct access to customs specialists who provide real-time updates and assist with special requirements.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modern Benefits Split Layout -->
+            <section class="modern-section">
+                <div class="why-us-split bounce-in-up" style="grid-template-columns: 1.2fr 0.8fr;">
+                    <div class="why-us-content" style="padding: 4rem 3rem;">
+                        <h2 class="bounce-in-left" data-translate="custom-why-title">Why Choose Us?</h2>
+                        <div class="benefit-list">
+                            <div class="benefit-item bounce-in-right stagger-1">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="custom-why-1">Full documentation preparation and verification</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-2">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="custom-why-2">Up-to-date compliance with trade laws and tariffs</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-3">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="custom-why-3">Risk management and duty optimization strategies</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-4">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="custom-why-4">Fast and reliable import/export processing</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    
+                    <div class="why-us-image">
+                        <img src="images/custom/cover2.jpg" alt="Why Choose Custom Clearance">
+                    </div>
                 </div>
-            </div>
-        </div>
-
-         <!-- Land Transportation Services Grid -->
-         <div class="land-transport-services fade-in-up">
-            <div class="services-header">
-                <h2 class="fade-in-up" data-translate="custom-seamless-title">Seamless Customs Solutions with Japan Resource Group</h2>
-                <p class="fade-in-delay-1" data-translate="custom-seamless-desc">Japan Resource Group simplifies the complexities of international trade by offering reliable and
-                    efficient customs clearance services. Our experts handle documentation, compliance, and
-                    regulatory requirements with precision, ensuring smooth cargo movement across borders. With
-                    deep knowledge of global trade regulations and strong relationships with customs authorities, we
-                    guarantee faster clearances, reduced delays, and complete peace of mind for our clients.</p>
-            </div>
-
-            <div class="why-ocean-freight-container fade-in-up">
-                <div class="why-ocean-freight-content">
-                    
-                    <div class="why-ocean-freight-image slide-in-right">
-                        <img src="images/custom/cover1.jpg" alt="Custom Clearance" class="bounce-in-delay-2">
-                    </div>
-                    <div class="why-ocean-freight-text slide-in-left">
-                        <h2 class="fade-in-up" data-translate="custom-understanding-title">Understanding Customs Clearance</h2>
-                        
-                        <div class="why-choose-list fade-in-delay-1">
-                            <span data-translate="custom-understanding-desc">Customs clearance is a crucial step in global logistics, involving the accurate preparation and
-                            submission of documents required to import or export goods. At Japan Resource Group, we go
-                            beyond standard procedures by providing hands-on guidance, up-to-date compliance knowledge,
-                            and customized solutions tailored to your business. Whether you are importing raw materials or
-                            exporting finished products, our team ensures that your shipments move smoothly through every
-                            checkpoint, saving you time and cost.</span>
-                            
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-            
-            <div class="why-ocean-freight-container fade-in-up">
-                <div class="why-ocean-freight-content">
-                    
-                    
-                    <div class="why-ocean-freight-text slide-in-left">
-                        <h2 class="fade-in-up" data-translate="custom-guiding-title">Guiding You Seamlessly Through Every Stage of Customs Clearance</h2>
-                        
-                        <div class="why-choose-list fade-in-delay-1">
-                            <span data-translate="custom-guiding-desc">At Japan Resource Group, our dedicated team of professionals ensures that you never have to
-navigate the complexities of customs alone. From document preparation and compliance checks
-to final cargo release, we provide step-by-step guidance with expertise and accuracy. With our
-support, the entire import and export clearance process becomes efficient, stress-free, and fully
-compliant with international trade regulations — giving you the confidence to focus on growing
-your business.</span>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="why-ocean-freight-image slide-in-right">
-                        <img src="images/custom/cover2.jpg" alt="Custom Clearance" class="bounce-in-delay-2">
-                    </div>
-
-                </div>
-            </div>
- 
-           
-            
-          
-        </div>
+            </section>
+        </div>   
     </div>
 
     <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-               <img src="images/logo.png" alt="logo" width="250" height="100"/>
+            <div class="footer-section footer-brand">
+                <img src="images/logo.png" alt="logo" width="250" height="100"/>
+                <p>Japan Resource Group provides dependable logistics coordination across land and ocean transport, booking, customs support, and operational handling.</p>
+                <a href="contact.html" class="footer-cta">Get In Touch</a>
             </div>
             <div class="footer-section">
                 <h4 data-translate="contact-japan">CONTACT JAPAN RESOURCE GROUP</h4>
@@ -272,8 +230,10 @@ your business.</span>
             <div class="footer-section">
                 <h4 data-translate="explore-japan">EXPLORE JAPAN RESOURCE GROUP</h4>
                 <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
                     <li><a href="about.html" data-translate="company-profile">Company Profile</a></li>
                     <li><a href="about.html" data-translate="about-japan">About Japan Resource Group</a></li>
+                    <li><a href="contact.html" data-translate="get-in-touch">Get In Touch</a></li>
                 </ul>
             </div>
         </div>
@@ -282,126 +242,16 @@ your business.</span>
             <div class="social-links">
                 <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                 <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
     <script src="script.js"></script>
     <script src="language-system.js"></script>
     <script src="search.js"></script>
-    
-    <!-- Mobile Menu Override Script -->
-    <script>
-        // Override mobile menu functionality to ensure it works
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait for other scripts to load
-            setTimeout(function() {
-                const mobileToggle = document.querySelector('.mobile-menu-toggle');
-                const mobileNav = document.querySelector('.mobile-nav');
-                const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
-                
-                if (mobileToggle && mobileNav) {
-                    // Remove any existing event listeners by cloning the element
-                    const newToggle = mobileToggle.cloneNode(true);
-                    mobileToggle.parentNode.replaceChild(newToggle, mobileToggle);
-                    
-                    // Add new event listener
-                    newToggle.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        newToggle.classList.toggle('active');
-                        mobileNav.classList.toggle('active');
-                        
-                        // Animate hamburger menu
-                        const spans = newToggle.querySelectorAll('span');
-                        if (newToggle.classList.contains('active')) {
-                            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                            spans[1].style.opacity = '0';
-                            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                        } else {
-                            spans[0].style.transform = 'none';
-                            spans[1].style.opacity = '1';
-                            spans[2].style.transform = 'none';
-                        }
-                    });
-                    
-                    // Handle mobile dropdown toggles
-                    mobileDropdownToggles.forEach(toggle => {
-                        toggle.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            const dropdown = toggle.closest('.mobile-dropdown');
-                            dropdown.classList.toggle('active');
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on dropdown menu items
-                    const mobileDropdownItems = document.querySelectorAll('.mobile-dropdown-menu .mobile-nav-link');
-                    mobileDropdownItems.forEach(item => {
-                        item.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on a link (but not dropdown toggles)
-                    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link:not(.mobile-dropdown-toggle)');
-                    mobileNavLinks.forEach(link => {
-                        link.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking outside
-                    document.addEventListener('click', (e) => {
-                        if (mobileNav && newToggle && mobileNav.classList.contains('active')) {
-                            if (!mobileNav.contains(e.target) && !newToggle.contains(e.target)) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        }
-                    });
-                }
-            }, 1000);
-        });
-    </script>
-    
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-    
-    <script src="script.js"></script>
-    <script src="language-system.js"></script>
     <script src="scroll-to-top.js"></script>
 </body>
 </html>

@@ -8,45 +8,45 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="homepage">
     <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
     <header class="header-above">
-        <div class="slide-in-right">
-         <ul class="nav-list">
-             <li><a href="javascript:void(0)">
-                 <i class="fas fa-search"></i>
-             </a></li>
+       <div class="slide-in-right">
+        <ul class="nav-list">
+            <li><a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>booking@japanresourcegroup.com</span>
+            </a></li>
+            <li><a href="#" class="search-toggle"><i class="fas fa-search"></i></a></li>
+            <li class="language-select">
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+                <option value="ko">한국어</option>
+            </select>
+        </li>
+        <li><a href="contact.html">
+            <i class="fas fa-phone-alt"></i>
+            <span data-translate="get-in-touch">Get In Touch</span>
+        </a></li>
       
-         <li class="language-select">
-             <select id="language-select" onchange="changeLanguage(this.value)">
-                 <option value="en">English</option>
-                 <option value="ja">日本語</option>
-                 <option value="zh">中文</option>
-                 <option value="ko">한국어</option>
-             </select>
-         </li>
-         <li><a href="contact.html">
-             <i class="fas fa-phone-alt"></i>
-             <span data-translate="get-in-touch">Get In Touch</span>
-         </a></li>
-       
-         </ul>
-        </div>
-     </header>
-    
+        </ul>
+       </div>
+    </header>
+    <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="logo">
-                </a>
+                <img src="images/logo.png" alt="logo">
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" class="active" data-translate="about-us">About Us</a></li>
                     <li class="dropdown">
-                        <a href="#services" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                        <a href="#services" class="dropdown-toggle" data-translate="services">Services <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="ocean_transportation.html">Ocean Transportation</a></li>
                             <li><a href="supply_chain_management.html">Supply Chain Management</a></li>
@@ -55,12 +55,13 @@
                             <li><a href="custom_clearance.html">Custom Clearance</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                    
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <i class="fas fa-globe"></i> <a href="contact.html" class="">Global Network</a>
-             </div>
+               <a href="contact.html" class="header-cta-btn"><i class="fas fa-globe"></i><span>Global Network</span></a>
+            </div>
             <div class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -71,10 +72,10 @@
         <!-- Mobile Navigation Menu -->
         <nav class="mobile-nav">
             <ul class="mobile-nav-list">
-                    <li><a href="index.html" class="mobile-nav-link" data-translate="home">Home</a></li>
-                    <li><a href="about.html" class="mobile-nav-link" data-translate="about-us">About Us</a></li>
+                <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
                 <li class="mobile-dropdown">
-                    <a href="#services" class="mobile-nav-link mobile-dropdown-toggle" data-translate="services">Services <i class="fas fa-chevron-down"></i></a>
+                    <a href="#services" class="mobile-nav-link mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
                     <ul class="mobile-dropdown-menu">
                         <li><a href="ocean_transportation.html" class="mobile-nav-link">Ocean Transportation</a></li>
                         <li><a href="supply_chain_management.html" class="mobile-nav-link">Supply Chain Management</a></li>
@@ -83,17 +84,16 @@
                         <li><a href="custom_clearance.html" class="mobile-nav-link">Custom Clearance</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html" class="mobile-nav-link" data-translate="contact">Contact</a></li>
+                
+                <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
 
     <!-- Main Banner -->
-    <section class="about-banner bounce-in-up">
-        <div class="banner-overlay">
-            <h1 class="text-reveal bounce-elastic" data-translate="about-title">KNOW US AND OUR SERVICES</h1>
-        </div>
+    <section class="about-banner">
+    
     </section>
 
     <!-- About Us Content -->
@@ -107,105 +107,98 @@
 
           
 
-            <div class="company-section bounce-in-right">
-                <h3 class="bounce-scale" data-translate="our-mission">Who We Are</h3>
-                <p class="bounce-elastic stagger-1">We are a globally connected logistics and supply chain company committed to providing end-to-end solutions for businesses across industries. With years of expertise, we combine advanced technology, skilled professionals, and a strong partner network to ensure seamless cargo movement, efficient supply chain operations, and unmatched service quality.</p>
-            </div>
-
-            <div class="company-section bounce-in-left">
-                <h3 class="bounce-scale" data-translate="our-vision">Our Vision</h3>
-                <p class="bounce-elastic stagger-1">To be recognized as a world-class logistics partner that transforms the way businesses connect and trade globally. We aim to set new benchmarks in efficiency, transparency, and innovation, while becoming the most reliable name in international logistics.</p>
-            </div>
-
-            <div class="company-section bounce-in-right">
-                <h3 class="bounce-scale" data-translate="our-mission">Our Mission</h3>
-                <p class="text-reveal stagger-1">Our mission is to empower businesses with reliable, cost-effective, and customized logistics solutions. From land transportation to ocean freight, supply chain management, yard services, and customs clearance — we provide comprehensive support at every stage of trade. By combining global standards with local expertise, we create value-driven outcomes for our clients.</p>
-            </div>
-
-            
-
-            <div class="company-section bounce-in-left hover-lift">
-                <h3 class="bounce-scale" data-translate="our-values">Our Core Values</h3>
-                <ul class="values-list">
-                    <li class="bounce-elastic stagger-1 hover-lift"><strong>Integrity & Trust</strong> – We believe in building long-term relationships based on transparency and honesty.</li>
-                    <li class="bounce-elastic stagger-2 hover-lift"><strong>Commitment to Excellence</strong> – Every shipment, every service, every time — we deliver with precision.</li>
-                    <li class="bounce-elastic stagger-3 hover-lift"><strong>Innovation & Technology</strong> – Continuously improving through smart solutions and modern logistics practices.</li>
-                    <li class="bounce-elastic stagger-4 hover-lift"><strong>Customer-Centric Approach</strong> – Your needs are at the heart of everything we do.</li>
-                    <li class="bounce-elastic stagger-5 hover-lift"><strong>Global Connectivity</strong> – Strong networks and partnerships that connect businesses worldwide.</li>
-                </ul>
-            </div>
-
-            <div class="company-section bounce-in-right hover-lift">
-                <h3 class="bounce-scale" data-translate="why-choose-us">Why Choose Us</h3>
-                <ul class="why-choose-list">
-                    <li class="bounce-elastic stagger-1 hover-lift">End-to-end logistics solutions under one roof.</li>
-                    <li class="bounce-elastic stagger-2 hover-lift">Strong global partnerships with leading shipping lines and carriers.</li>
-                    <li class="bounce-elastic stagger-3 hover-lift">Tailored, flexible, and cost-effective services.</li>
-                    <li class="bounce-elastic stagger-4 hover-lift">Expert knowledge of customs, regulations, and trade compliance.</li>
-                    <li class="bounce-elastic stagger-5 hover-lift">Dedicated customer support for peace of mind.</li>
-                </ul>
-            </div>
-
-            <!-- Mission and Images Section -->
-            <div class="mission-images-section bounce-in-up">
-                <div class="mission-content bounce-in-left">
-                    <h3 class="bounce-scale">OUR MISSION</h3>
-                    <p class="bounce-elastic stagger-1">Our mission is to empower businesses with reliable, cost-effective,
-                        and customized logistics solutions. From land transportation to
-                        ocean freight, supply chain management, yard services, and
-                        customs clearance — we provide comprehensive support at every
-                        stage of trade. By combining global standards with local expertise,
-                        we create value-driven outcomes for our clients.</p>
-                </div>
-                <div class="mission-images-grid bounce-in-right">
-                    <div class="mission-image bounce-scale stagger-1">
-                        <img src="images/about/mission1.jpg" alt="Port with Containers">
+            <!-- Modern Purpose Section (Mission & Vision) -->
+            <section class="modern-section">
+                <div class="purpose-grid">
+                    <div class="purpose-card vision-card bounce-in-left">
+                        <div class="purpose-icon"><i class="fas fa-eye"></i></div>
+                        <h3 data-translate="our-vision">Our Vision</h3>
+                        <p>To be recognized as a world-class logistics partner that transforms the way businesses connect and trade globally. We aim to set new benchmarks in efficiency, transparency, and innovation, while becoming the most reliable name in international logistics.</p>
                     </div>
-                    <div class="mission-image bounce-scale stagger-2">
-                        <img src="images/about/mission2.jpg" alt="Truck Transportation">
-                    </div>
-                    <div class="mission-image bounce-scale stagger-3">
-                        <img src="images/about/mission3.jpg" alt="Cargo Ship">
-                    </div>
-                    <div class="mission-image bounce-scale stagger-4">
-                        <img src="images/about/mission4.jpg" alt="Airport Logistics">
+                    <div class="purpose-card mission-card bounce-in-right">
+                        <div class="purpose-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3 data-translate="our-mission">Our Mission</h3>
+                        <p>Our mission is to empower businesses with reliable, cost-effective, and customized logistics solutions. From land transportation to ocean freight, supply chain management, yard services, and customs clearance — we provide comprehensive support at every stage of trade.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Assurance and Values Section -->
-            <div class="assurance-values-section bounce-in-up">
-               
-                <div class="assurance-content bounce-in-left">
-                    <div class="assurance-icon bounce-scale stagger-3">
-                        <i class="fas fa-flag"></i>
+            <!-- Modern Core Values Section -->
+            <section class="modern-section">
+                <h2 class="section-title-center" data-translate="our-values">Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card bounce-in-up stagger-1">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Integrity & Trust</h4>
+                        <p>Building long-term relationships based on transparency and honesty.</p>
                     </div>
-                    <h3 class="bounce-scale">OUR ASSURANCE</h3>
-                    <p class="bounce-elastic stagger-1">At Japan Resource Group, we assure our clients of reliability, transparency, and excellence in every step of the logistics journey. Our commitment goes beyond delivering shipments — we deliver trust, value, and peace of mind.</p>
-                    <p class="bounce-elastic stagger-2">Through our global partnerships, expert team, and advanced solutions, we guarantee:</p>
-                    <ul class="assurance-list">
-                        <li class="bounce-elastic stagger-3"><strong>On-Time Delivery</strong> – Every shipment handled with precision and care.</li>
-                        <li class="bounce-elastic stagger-4"><strong>Trusted Reliability</strong> – Services backed by consistency and expertise.</li>
-                        <li class="bounce-elastic stagger-5"><strong>Customer Satisfaction</strong> – Personalized solutions tailored to your needs.</li>
-                        <li class="bounce-elastic stagger-6"><strong>Quality at Every Stage</strong> – Ensuring smooth and secure operations from start to finish.</li>
-                    </ul>
-                    <p class="bounce-elastic stagger-7">With Japan Resource Group, you can be confident that your business is in safe and capable hands.</p>
-                </div>
-               
-                <div class="values-content bounce-in-right">
-                    <div class="values-icon bounce-scale stagger-4">
-                        <i class="fas fa-star"></i>
+                    <div class="value-card bounce-in-up stagger-2">
+                        <i class="fas fa-award"></i>
+                        <h4>Excellence</h4>
+                        <p>Every shipment, every service, every time — delivered with precision.</p>
                     </div>
-                    <h3 class="bounce-scale">OUR VALUES</h3>
-                    <ul class="values-simple-list">
-                        <li class="bounce-elastic stagger-1">Driven by Trust</li>
-                        <li class="bounce-elastic stagger-2">Powered by Innovation</li>
-                        <li class="bounce-elastic stagger-3">Committed to Excellence</li>
-                        <li class="bounce-elastic stagger-4">Centered on You</li>
-                        <li class="bounce-elastic stagger-5">Connected Across Borders</li>
-                    </ul>
+                    <div class="value-card bounce-in-up stagger-3">
+                        <i class="fas fa-lightbulb"></i>
+                        <h4>Innovation</h4>
+                        <p>Smart solutions and modern logistics practices for continuous improvement.</p>
+                    </div>
+                    <div class="value-card bounce-in-up stagger-4">
+                        <i class="fas fa-user-tie"></i>
+                        <h4>Customer-Centric</h4>
+                        <p>Your needs are at the heart of everything we do.</p>
+                    </div>
                 </div>
-                
+            </section>
+
+            <!-- Modern Why Choose Us Section -->
+            <section class="modern-section">
+                <div class="why-us-split bounce-in-up">
+                    <div class="why-us-image">
+                        <img src="images/about/mission1.jpg" alt="Logistics Excellence">
+                    </div>
+                    <div class="why-us-content">
+                        <h2 class="bounce-in-left" data-translate="why-choose-us">Why Choose Us</h2>
+                        <div class="benefit-list">
+                            <div class="benefit-item bounce-in-right stagger-1">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5>Comprehensive Solutions</h5>
+                                    <p>End-to-end logistics solutions under one roof for seamless operations.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-2">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <h5>Global Connectivity</h5>
+                                    <p>Strong partnerships with leading shipping lines and carriers worldwide.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-3">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h5>Expert Knowledge</h5>
+                                    <p>In-depth understanding of customs, regulations, and trade compliance.</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-4">
+                                <i class="fas fa-headset"></i>
+                                <div>
+                                    <h5>Dedicated Support</h5>
+                                    <p>24/7 customer support ensuring complete peace of mind.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final Assurance Section -->
+            <div class="company-section bounce-in-up hover-lift">
+                <div class="assurance-icon bounce-scale">
+                    <i class="fas fa-shield-heart" style="font-size: 3rem; color: var(--primary-blue); margin-bottom: 1.5rem;"></i>
+                </div>
+                <h3 class="bounce-scale" data-translate="our-assurance">Our Assurance</h3>
+                <p>At Japan Resource Group, we assure our clients of reliability, transparency, and excellence in every step of the logistics journey. Our commitment goes beyond delivering shipments — we deliver trust, value, and peace of mind.</p>
             </div>
         </div>
         
@@ -230,8 +223,10 @@
     <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-               <img src="images/logo.png" alt="logo" width="250" height="100"/>
+            <div class="footer-section footer-brand">
+                <img src="images/logo.png" alt="logo" width="250" height="100"/>
+                <p>Japan Resource Group provides dependable logistics coordination across land and ocean transport, booking, customs support, and operational handling.</p>
+                <a href="contact.html" class="footer-cta">Get In Touch</a>
             </div>
             <div class="footer-section">
                 <h4 data-translate="contact-japan">CONTACT JAPAN RESOURCE GROUP</h4>
@@ -274,8 +269,10 @@
             <div class="footer-section">
                 <h4 data-translate="explore-japan">EXPLORE JAPAN RESOURCE GROUP</h4>
                 <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
                     <li><a href="about.html" data-translate="company-profile">Company Profile</a></li>
                     <li><a href="about.html" data-translate="about-japan">About Japan Resource Group</a></li>
+                    <li><a href="contact.html" data-translate="get-in-touch">Get In Touch</a></li>
                 </ul>
             </div>
         </div>
@@ -284,126 +281,21 @@
             <div class="social-links">
                 <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                 <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
-
+    
     <!-- Scroll to Top Button -->
     <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
         <i class="fas fa-chevron-up"></i>
     </button>
-
+    
     <script src="script.js"></script>
     <script src="language-system.js"></script>
     <script src="search.js"></script>
-    
-    <!-- Mobile Menu Override Script -->
-    <script>
-        // Override mobile menu functionality to ensure it works
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait for other scripts to load
-            setTimeout(function() {
-                const mobileToggle = document.querySelector('.mobile-menu-toggle');
-                const mobileNav = document.querySelector('.mobile-nav');
-                const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
-                
-                if (mobileToggle && mobileNav) {
-                    // Remove any existing event listeners by cloning the element
-                    const newToggle = mobileToggle.cloneNode(true);
-                    mobileToggle.parentNode.replaceChild(newToggle, mobileToggle);
-                    
-                    // Add new event listener
-                    newToggle.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        newToggle.classList.toggle('active');
-                        mobileNav.classList.toggle('active');
-                        
-                        // Animate hamburger menu
-                        const spans = newToggle.querySelectorAll('span');
-                        if (newToggle.classList.contains('active')) {
-                            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                            spans[1].style.opacity = '0';
-                            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                        } else {
-                            spans[0].style.transform = 'none';
-                            spans[1].style.opacity = '1';
-                            spans[2].style.transform = 'none';
-                        }
-                    });
-                    
-                    // Handle mobile dropdown toggles
-                    mobileDropdownToggles.forEach(toggle => {
-                        toggle.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            const dropdown = toggle.closest('.mobile-dropdown');
-                            dropdown.classList.toggle('active');
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on dropdown menu items
-                    const mobileDropdownItems = document.querySelectorAll('.mobile-dropdown-menu .mobile-nav-link');
-                    mobileDropdownItems.forEach(item => {
-                        item.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on a link (but not dropdown toggles)
-                    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link:not(.mobile-dropdown-toggle)');
-                    mobileNavLinks.forEach(link => {
-                        link.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking outside
-                    document.addEventListener('click', (e) => {
-                        if (mobileNav && newToggle && mobileNav.classList.contains('active')) {
-                            if (!mobileNav.contains(e.target) && !newToggle.contains(e.target)) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        }
-                    });
-                }
-            }, 1000);
-        });
-    </script>
-    
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-    
-    <script src="script.js"></script>
-    <script src="language-system.js"></script>
     <script src="scroll-to-top.js"></script>
 </body>
 </html>

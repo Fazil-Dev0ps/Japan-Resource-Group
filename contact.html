@@ -8,46 +8,45 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="homepage">
     <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
     <header class="header-above">
-        <div class="slide-in-right">
-         <ul class="nav-list">
-             <li><a href="javascript:void(0)">
-                 <i class="fas fa-search"></i>
-             </a></li>
+       <div class="slide-in-right">
+        <ul class="nav-list">
+            <li><a href="contact.html">
+                <i class="fas fa-envelope"></i>
+                <span>booking@japanresourcegroup.com</span>
+            </a></li>
+            <li><a href="#" class="search-toggle"><i class="fas fa-search"></i></a></li>
+            <li class="language-select">
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+                <option value="ko">한국어</option>
+            </select>
+        </li>
+        <li><a href="contact.html">
+            <i class="fas fa-phone-alt"></i>
+            <span data-translate="get-in-touch">Get In Touch</span>
+        </a></li>
       
-         <li class="language-select">
-             <select id="language-select" onchange="changeLanguage(this.value)">
-                 <option value="en">English</option>
-                 <option value="ja">日本語</option>
-                 <option value="zh">中文</option>
-                 <option value="ko">한국어</option>
-             </select>
-         </li>
-         <li><a href="contact.html">
-             <i class="fas fa-phone-alt"></i>
-             <span data-translate="get-in-touch">Get In Touch</span>
-         </a></li>
-       
-         </ul>
-        </div>
-     </header>
-    
+        </ul>
+       </div>
+    </header>
     <!-- Header -->
     <header class="header">
         <div class="header-container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="logo">
-                </a>
+                <img src="images/logo.png" alt="logo">
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
+                    <li><a href="about.html" data-translate="about-us">About Us</a></li>
                     <li class="dropdown">
-                        <a href="#services" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                        <a href="#services" class="dropdown-toggle" data-translate="services">Services <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="ocean_transportation.html">Ocean Transportation</a></li>
                             <li><a href="supply_chain_management.html">Supply Chain Management</a></li>
@@ -56,12 +55,13 @@
                             <li><a href="custom_clearance.html">Custom Clearance</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="contact.html" class="active">Contact</a></li> -->
+                    
+                    <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
-                <i class="fas fa-globe"></i> <a href="contact.html" class="">Global Network</a>
-             </div>
+               <a href="contact.html" class="header-cta-btn"><i class="fas fa-globe"></i><span>Global Network</span></a>
+            </div>
             <div class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -84,144 +84,128 @@
                         <li><a href="custom_clearance.html" class="mobile-nav-link">Custom Clearance</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+                
+                <li><a href="contact.html" class="mobile-nav-link active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Banner -->
-    <section class="ocean-banner bounce-in-up">
-        <div class="banner-overlay">
-            <h1 class="text-reveal bounce-elastic" data-translate="contact-title">CONTACT US</h1>
-        </div>
+    <section class="ocean-banner">
+    
     </section>
 
     <!-- Contact Content -->
     <div class="ocean-container">
         <div class="ocean-main-content">
-            <!-- Contact Introduction -->
-            
-
-            <!-- Contact Information Grid -->
-            <div class="ocean-content-grid">
-                <!-- Contact Details -->
-                <div class="ocean-text-content bounce-in-left">
-                    <h2 class="bounce-scale" data-translate="contact-info-title">Contact Information</h2>
-                    
-                    <div class="content-section bounce-in-up stagger-1 hover-lift">
-                        <h3 class="bounce-scale" data-translate="office-address">Office Address</h3>
-                        <p class="bounce-elastic stagger-2">613-0901, Kyoto Shi, Fushimi-Ku Yodohizumecho 229<br>Japan</p>
+            <!-- Modern Contact Info Grid -->
+            <section class="modern-section" style="padding-top: 0;">
+                <div class="values-grid">
+                    <div class="value-card bounce-in-up stagger-1">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4 data-translate="office-address">Office Address</h4>
+                        <p>613-0901, Kyoto Shi, Fushimi-Ku Yodohizumecho 229<br>Japan</p>
                     </div>
-
-                    <div class="content-section bounce-in-up stagger-2 hover-lift">
-                        <h3 class="bounce-scale" data-translate="phone-numbers">Phone Numbers</h3>
-                        <p class="bounce-elastic stagger-3">
+                    <div class="value-card bounce-in-up stagger-2">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4 data-translate="phone-numbers">Contact Channels</h4>
+                        <p>
                             <strong>Primary:</strong> +81 80-4167-0078<br>
-                            <strong>Office:</strong> +81 75-754-6036<br>
-                            <strong>Fax:</strong> +81 75-754-6211
+                            <strong>Office:</strong> +81 75-754-6036
                         </p>
                     </div>
-
-                    <div class="content-section bounce-in-up stagger-3 hover-lift">
-                        <h3 class="bounce-scale" data-translate="email-website">Email & Website</h3>
-                        <p class="bounce-elastic stagger-4">
-                            <strong>Email:</strong> booking@japanresourcegroup.com<br>
-                            <strong>Website:</strong> www.japanresourcegroup.com
+                    <div class="value-card bounce-in-up stagger-3">
+                        <i class="fas fa-envelope"></i>
+                        <h4 data-translate="email-website">Digital Hub</h4>
+                        <p>
+                            booking@japanresourcegroup.com<br>
+                            www.japanresourcegroup.com
                         </p>
                     </div>
-
-                    <div class="content-section fade-in-up stagger-4 hover-lift">
-                        <h3 class="text-reveal" data-translate="office-hours">Business Hours</h3>
-                        <p class="fade-in-delay-1">
-                            <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM (JST)<br>
-                            <strong>Saturday:</strong> 9:00 AM - 1:00 PM (JST)<br>
-                            <strong>Sunday:</strong> Closed
+                    <div class="value-card bounce-in-up stagger-4">
+                        <i class="fas fa-clock"></i>
+                        <h4 data-translate="office-hours">Business Hours</h4>
+                        <p>
+                            <strong>Mon - Fri:</strong> 9:00 - 18:00<br>
+                            <strong>Sat:</strong> 9:00 - 13:00
                         </p>
                     </div>
                 </div>
+            </section>
 
-                <!-- Contact Form -->
-                <div class="ocean-image-content slide-in-right">
-                    <div class="contact-form-container fade-in-up hover-glow">
-                        <h2 class="text-reveal" data-translate="contact-form-title">Send us a Message</h2>
-                        <div id="form-messages" class="form-messages"></div>
-                        <form id="contact-form" class="contact-form">
-                            <div class="form-group fade-in-delay-1 stagger-1">
-                                <label for="name" data-translate="name-label">Full Name *</label>
-                                <input type="text" id="name" name="name" required class="form-input-hover">
-                            </div>
-                            
-                            <div class="form-group fade-in-delay-2 stagger-2">
-                                <label for="email" data-translate="email-label">Email Address *</label>
-                                <input type="email" id="email" name="email" required class="form-input-hover">
-                            </div>
-                            
-                            <div class="form-group fade-in-delay-3 stagger-3">
-                                <label for="phone" data-translate="phone-label">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" class="form-input-hover">
-                            </div>
-                            
-                            <div class="form-group fade-in-delay-4 stagger-4">
-                                <label for="company" data-translate="company-label">Company Name</label>
-                                <input type="text" id="company" name="company" class="form-input-hover">
-                            </div>
-                            
-                            <div class="form-group fade-in-delay-5 stagger-5">
-                                <label for="service" data-translate="service-label">Service Interested In</label>
-                                <select id="service" name="service" class="form-input-hover">
-                                    <option value="">Select a service</option>
-                                    <option value="ocean_transportation">Ocean Transportation</option>
-                                    <option value="land_transportation">Land Transportation</option>
-                                    <option value="supply-chain">Supply Chain Management</option>
-                                    <option value="yard_services">Yard Services</option>
-                                    <option value="custom_clearance">Custom Clearance</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group fade-in-delay-6 stagger-6">
-                                <label for="message" data-translate="message-label">Message *</label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your logistics needs..." class="form-input-hover"></textarea>
-                            </div>
-                            
-                            <button type="submit" class="submit-btn fade-in-delay-7 stagger-7 hover-lift">
-                                <i class="fas fa-paper-plane"></i>
-                                <span data-translate="send-message">Send Message</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Why Choose Us Section -->
-            <div class="why-ocean-freight-container section-reveal">
-                <div class="why-ocean-freight-content">
-                    <div class="">
-                        <h2 class="text-reveal">Why Choose Japan Resource Group?</h2>
+            <!-- Modern Form & Intro Split -->
+            <section class="modern-section">
+                <div class="why-us-split bounce-in-up">
+                    <div class="why-us-content" style="padding: 3rem;">
+                        <h2 class="bounce-in-left" data-translate="contact-intro-title">Get in Touch</h2>
+                        <h3 class="bounce-in-up stagger-1" style="color: var(--accent-dark); margin-bottom: 1.5rem;">Let's discuss your logistics requirements</h3>
+                        <p class="bounce-in-up stagger-2" data-translate="contact-intro-desc">Our dedicated team is ready to provide you with tailored logistics solutions. Whether you have a query about our services or need a customized quote, we're here to help you navigate the complexities of global trade.</p>
                         
-                        <div class="why-choose-list fade-in-up stagger-1">
-                            <ul class="fade-in-up stagger-2">
-                                <li class="fade-in-up stagger-3 hover-lift">Expert team with years of logistics experience</li>
-                                <li class="fade-in-up stagger-4 hover-lift">Comprehensive services across all transportation modes</li>
-                                <li class="fade-in-up stagger-5 hover-lift">Global network and strategic partnerships</li>
-                                <li class="fade-in-up stagger-6 hover-lift">Technology-driven solutions for real-time tracking</li>
-                                <li class="fade-in-up stagger-7 hover-lift">Dedicated customer support and personalized service</li>
-                                <li class="fade-in-up stagger-8 hover-lift">Commitment to excellence and customer satisfaction</li>
-                            </ul>
+                        <div class="benefit-list" style="margin-top: 2rem;">
+                            <div class="benefit-item bounce-in-right stagger-1">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="contact-benefit-1">Rapid response to all inquiries</h5>
+                                </div>
+                            </div>
+                            <div class="benefit-item bounce-in-right stagger-2">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h5 data-translate="contact-benefit-2">Dedicated support for complex shipments</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                   
+                    <div class="why-us-image" style="background: rgba(255, 255, 255, 0.05); padding: 2rem;">
+                        <div class="contact-form-container" style="box-shadow: none; padding: 0;">
+                            <div id="form-messages" class="form-messages"></div>
+                            <form id="contact-form" class="contact-form">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Full Name *" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Email Address *" required>
+                                </div>
+                                <div class="form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                    <div class="form-group">
+                                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" id="company" name="company" placeholder="Company">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <select id="service" name="service">
+                                        <option value="">Select a service</option>
+                                        <option value="ocean_transportation">Ocean Transportation</option>
+                                        <option value="land_transportation">Land Transportation</option>
+                                        <option value="supply-chain">Supply Chain Management</option>
+                                        <option value="yard_services">Yard Services</option>
+                                        <option value="custom_clearance">Custom Clearance</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" rows="4" placeholder="Your Message *" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn" style="width: 100%;">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span data-translate="send-message">Send Message</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer id="contact" class="footer fade-in-up">
+    <footer id="contact" class="footer">
         <div class="footer-content">
-            <div class="footer-section fade-in-up stagger-1">
-               <img src="images/logo.png" alt="logo" width="250" height="100" class="scale-in-bounce"/>
+            <div class="footer-section footer-brand">
+                <img src="images/logo.png" alt="logo" width="250" height="100"/>
+                <p>Japan Resource Group provides dependable logistics coordination across land and ocean transport, booking, customs support, and operational handling.</p>
+                <a href="contact.html" class="footer-cta">Get In Touch</a>
             </div>
             <div class="footer-section">
                 <h4 data-translate="contact-japan">CONTACT JAPAN RESOURCE GROUP</h4>
@@ -264,15 +248,21 @@
             <div class="footer-section">
                 <h4 data-translate="explore-japan">EXPLORE JAPAN RESOURCE GROUP</h4>
                 <ul>
+                    <li><a href="index.html" data-translate="home">Home</a></li>
                     <li><a href="about.html" data-translate="company-profile">Company Profile</a></li>
                     <li><a href="about.html" data-translate="about-japan">About Japan Resource Group</a></li>
+                    <li><a href="contact.html" data-translate="get-in-touch">Get In Touch</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <p><span data-translate="footer-copyright">&copy; 2025 Japan Resource Group.</span> <span data-translate="rights-reserved">All rights reserved.</span></p>
             <div class="social-links">
+                <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
                 <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </footer>
@@ -282,9 +272,7 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <script src="script.js"></script>
-    <script src="language-system.js"></script>
-    <script src="search.js"></script>
+
     
     <!-- Email Functionality Script -->
     <script>
@@ -401,113 +389,10 @@ ${formData.message}`;
         }
     </script>
     
-    <!-- Mobile Menu Override Script -->
-    <script>
-        // Override mobile menu functionality to ensure it works
-        document.addEventListener('DOMContentLoaded', function() {
-            // Wait for other scripts to load
-            setTimeout(function() {
-                const mobileToggle = document.querySelector('.mobile-menu-toggle');
-                const mobileNav = document.querySelector('.mobile-nav');
-                const mobileDropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
-                
-                if (mobileToggle && mobileNav) {
-                    // Remove any existing event listeners by cloning the element
-                    const newToggle = mobileToggle.cloneNode(true);
-                    mobileToggle.parentNode.replaceChild(newToggle, mobileToggle);
-                    
-                    // Add new event listener
-                    newToggle.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        newToggle.classList.toggle('active');
-                        mobileNav.classList.toggle('active');
-                        
-                        // Animate hamburger menu
-                        const spans = newToggle.querySelectorAll('span');
-                        if (newToggle.classList.contains('active')) {
-                            spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                            spans[1].style.opacity = '0';
-                            spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-                        } else {
-                            spans[0].style.transform = 'none';
-                            spans[1].style.opacity = '1';
-                            spans[2].style.transform = 'none';
-                        }
-                    });
-                    
-                    // Handle mobile dropdown toggles
-                    mobileDropdownToggles.forEach(toggle => {
-                        toggle.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            const dropdown = toggle.closest('.mobile-dropdown');
-                            dropdown.classList.toggle('active');
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on dropdown menu items
-                    const mobileDropdownItems = document.querySelectorAll('.mobile-dropdown-menu .mobile-nav-link');
-                    mobileDropdownItems.forEach(item => {
-                        item.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking on a link (but not dropdown toggles)
-                    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link:not(.mobile-dropdown-toggle)');
-                    mobileNavLinks.forEach(link => {
-                        link.addEventListener('click', () => {
-                            if (mobileNav && newToggle) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        });
-                    });
-                    
-                    // Close mobile menu when clicking outside
-                    document.addEventListener('click', (e) => {
-                        if (mobileNav && newToggle && mobileNav.classList.contains('active')) {
-                            if (!mobileNav.contains(e.target) && !newToggle.contains(e.target)) {
-                                mobileNav.classList.remove('active');
-                                newToggle.classList.remove('active');
-                                
-                                // Reset hamburger menu
-                                const spans = newToggle.querySelectorAll('span');
-                                spans[0].style.transform = 'none';
-                                spans[1].style.opacity = '1';
-                                spans[2].style.transform = 'none';
-                            }
-                        }
-                    });
-                }
-            }, 1000);
-        });
-    </script>
-    
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
     
     <script src="script.js"></script>
     <script src="language-system.js"></script>
+    <script src="search.js"></script>
     <script src="scroll-to-top.js"></script>
 </body>
 </html>
