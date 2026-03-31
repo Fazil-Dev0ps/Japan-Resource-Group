@@ -47,7 +47,7 @@ function initializeProfessionalAnimations() {
     }, observerOptions);
     
     const animatedElements = document.querySelectorAll(
-        '.animate-on-scroll, .fade-in-up, .fade-in-down, .fade-in-left, .fade-in-right, .section-reveal, .card-reveal, .text-reveal, .slide-in-left, .slide-in-right, .service-card, .department-column, .content-section, .company-section, .shipping-logo'
+        '.animate-on-scroll, .fade-in-up, .fade-in-down, .fade-in-left, .fade-in-right, .bounce-in-up, .bounce-in-down, .bounce-in-left, .bounce-in-right, .section-reveal, .card-reveal, .text-reveal, .slide-in-left, .slide-in-right, .service-card, .department-column, .content-section, .company-section, .shipping-logo, .why-us-split'
     );
     
     animatedElements.forEach(el => {
